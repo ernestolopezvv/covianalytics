@@ -29,6 +29,14 @@
         </div>
     </nav>
 
+    <form action="login.php" method="POST">
+        <h2>Iniciar sesión</h2>
+        <input type="email" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" placeholder="&#128273; Email" name="email" required>
+        <input type="submit" value="submit" name="submit">
+    </form>
+
+    
+
     <script src="app.js"></script>
     
 </body>
