@@ -117,6 +117,56 @@ nav{
     transform: rotate(45deg) translate(-5px,-6px);
 }
 
+/*logos*/
+.img-logo{
+	width:8%;
+	position:relative;
+	bottom:-12%;
+	left:1%;
+	opacity:50%
+}
+
+
+/*Index*/
+.format-index{
+	background-color: #efefef;
+	border-radius:8px;
+    border: 1px solid #ccc;
+	position:relative;
+	bottom: -15%;
+	left: 35%;
+	width: 30%;
+	text-align: center;
+	font-family: Candara;
+	
+}
+
+input[type=email] {
+  width: 90%;
+  padding: 2% 2.5%;
+  margin: 8% 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 100%;
+  background-color: #fff;
+}
+
+input[type=submit] {
+  width: 200px;
+  background-color: #795167;
+  color: white;
+  padding: 14px 20px;
+  margin: 2% 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #9F9F9F;
+}
 /* Conoce más */
 
 .box-area{
@@ -158,8 +208,54 @@ nav{
     background-position: center center;
 }
 
-/* Log In */
-
-.email{
-    text-transform: lowercase;
+/*Contactanos*/
+.contacts {
+	background-color: #AD99A4;
+	border-radius:6px;
+	height:63%;
+	width:30%;
+	position:relative;
+	left:35%;
+	bottom: -5%;
+	text-align:justify;
 }
+
+.contact {
+	height:20%;
+	width:90%;
+	position:relative;
+	left:5%;
+	bottom: -4.7%;
+	text-align:justify;
+	
+}
+
+.data-contact {
+	width:57%;
+	position:relative;
+	left:35%;
+	bottom: 80%;
+	text-align:justify;
+	font-family:Candara;
+	font-size:125%;
+}
+
+.img-contact {
+	position:relative;
+	bottom: 2%;
+	left:6%;
+    width:27.5%;
+    border-radius:150px;
+}
+
+.line{
+	color:#000;
+	position:relative;
+	bottom: 45%;
+}
+
+.pos{
+	left:80%;
+	position:relative;
+}
+
