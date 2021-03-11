@@ -134,7 +134,7 @@ nav{
 	border-radius:8px;
     border: 1px solid #ccc;
 	position:relative;
-	bottom: -15%;
+	bottom: -9%;
 	left: 35%;
 	width: 30%;
 	text-align: center;
@@ -267,13 +267,14 @@ footer{
     width: 100%;
     background: #5d4954;
     color: #ddd;
-    
+    position: relative;
+    bottom: -26%;    
 }
 
 .container-footer-all{
     width: 100%;
-    max-width: 1600px;
-    padding: 40px;
+    max-width: 1400px;
+    padding: 5px;
 }
 
 .container-body{
@@ -320,10 +321,11 @@ footer{
 
 .column3 {
     max-width: 400px;
+    font-size: 15px;
 }
 
 .column3 h1 {
-    font-size: 22px;
+    font-size: 20px;
     }
 
 .row2{
@@ -332,8 +334,8 @@ footer{
 }
 
 .row2 img {
-    width: 36px;
-    height: 36px;
+    width: 25px;
+    height: 25px;
 }
 
 .row2 label{
@@ -361,7 +363,6 @@ footer{
 .copyright{
     color: #c7c7c7;
 }
-
 .information a{
     text-decoration: none;
     color:#c7c7c7;
