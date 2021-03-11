@@ -29,9 +29,9 @@
                 $stmt = $conn->prepare($INSERT);
                 $stmt->bind_param("s", $email);
                 $stmt->execute();
-                echo "New record inserted sucessfully";
+                echo "Nuevo correo";
             }else
-                echo "Someone is using this email already";
+                echo "Correo ya utilizado";
         }
         $stmt->close();
         $conn->close();
