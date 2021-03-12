@@ -92,10 +92,75 @@
     } 
 ?>
 	</div>
-	<img src="img/pklogo.png" class="img-logo" />
-	<img src="img/teclogo.png" class="img-logo" />
 	
     <script src="app.js"></script>
+
+    <footer>
+
+        <div class="container-footer-all">
+
+            <div class="container-body">
+                <div class="column1">
+                    <h1>Informacion del Equipo 4</h1>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ducimus fugit quidem cumque velit atque autem sequi, necessitatibus amet a nisi? Ad ullam, enim eaque quis voluptatibus eius recusandae nesciunt!</p>
+                    <br>
+
+                </div>
+        
+                <div class="column2">
+                    <h1>Redes Sociales</h1>
+
+                    <div class="row">
+                        <img src="img/facebook.png">
+                        <label>Siguenos en Facebook</label>
+                    </div>
+
+                    <div class="row">
+                        <img src="img/instagram.png">
+                        <label>Siguenos en Instagram</label>
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="column3">
+                    <h1>Informacion Contactos</h1>
+
+                    <div class="row2">
+                        <img src="img/house.png">
+                        <label>"México"</label>
+                    </div>
+
+                    <div class="row2">
+                        <img src="img/smartphone.png">
+                        <label>+52 6621680662</label>
+                    </div>
+
+                    <div class="row2">
+                        <img src="img/contact.png">
+                        <label>A00904052@itesm.mx</label>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+            <div class="container-footer">
+                <div class="footer">
+                    <div class="copyright">
+                        © 2021 Todos los Derechos Reservados |
+                    </div>
+        
+                    <div class="information">
+                        <a href="">Informacion General</a> | <a href="">Aviso de Privacidad |</a>
+                    </div>
+                </div>
+            </div>
+
+
+    </footer>
     
 </body>
 </html>
