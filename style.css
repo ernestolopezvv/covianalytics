@@ -538,3 +538,20 @@ tr, td {
 	bottom:10%;
 	position:absolute;
 }
+
+/*mensaje*/
+.message-format{
+	background-color:#AD99A4;
+	width:40%;
+	height:30%;
+	position:absolute;
+	left:30%;
+	bottom:40%;
+	font-family:Candara;
+	border-radius:10px;
+}
+.posmess{
+	left:32%;
+	bottom:-40%;
+	position:absolute;
+}
