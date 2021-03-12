@@ -139,7 +139,6 @@ nav{
 	left: 37%;
 }
 
-/*Index*/
 .format-index{
 	background-color: #efefef;
 	border-radius:8px;
@@ -179,6 +178,21 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #9F9F9F;
 }
+
+/*Phone Login*/
+@media screen and (max-width: 768px) {
+	.format-index{
+	left: 12.5%;
+	width: 75%;
+	}
+	.message{
+	width: 65%;
+	bottom:13%;
+	left: 17.5%;
+}
+	
+}
+
 /* Conoce más */
 
 .box-area{
