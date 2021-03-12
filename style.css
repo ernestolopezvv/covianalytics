@@ -80,7 +80,7 @@ nav{
         width: 40%;
         transform:translateX(100%);
         transition: transform 0.5s ease-in;
-        z-index: 100;
+		z-index:200;
     }
     .nav-links li{
         opacity: 0;
@@ -88,6 +88,7 @@ nav{
     .burger{
         display: block;
     }
+
 }
 
 .nav-active{
@@ -138,7 +139,6 @@ nav{
 	left: 37%;
 }
 
-/*Index*/
 .format-index{
 	background-color: #efefef;
 	border-radius:8px;
@@ -178,6 +178,21 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #9F9F9F;
 }
+
+/*Phone Login*/
+@media screen and (max-width: 768px) {
+	.format-index{
+	left: 12.5%;
+	width: 75%;
+	}
+	.message{
+	width: 65%;
+	bottom:13%;
+	left: 17.5%;
+}
+	
+}
+
 /* Conoce más */
 
 .container-conoce{
@@ -267,7 +282,7 @@ input[type=submit]:hover {
     margin: 0;
     padding: 0;   
 }
-
+/*
 /*Contactanos*/
 .contacts {
 	background-color: #AD99A4;
@@ -309,15 +324,45 @@ input[type=submit]:hover {
 }
 
 .line{
-	color:#000;
+	color:#5d4954;
 	position:relative;
 	bottom: 45%;
 }
 
 
 .pos{
-	left:80%;
-	position:relative;
+	left:82%;
+	position:absolute;
+}
+
+/*Phone contactanos*/
+@media screen and (max-width: 768px) {
+	
+	.contacts {
+	border-radius:10px;
+	width:75%;
+	left:12.5%;
+	bottom: -5%;
+	}
+	.data-contact {
+	width:63%;
+	bottom: 70%;
+	font-size:92%;
+	}
+
+	.pos{
+	left:22%;
+	bottom:5%;
+	}
+	
+	.img-contact {
+	bottom: 2%;
+	left:2%;
+	}
+
+	.line{
+	bottom: 30%;
+	}
 }
 
 /* Footer */
@@ -458,3 +503,5 @@ footer{
         margin-bottom: 10%;
     }
 }
+
+/*Encuesta*/
