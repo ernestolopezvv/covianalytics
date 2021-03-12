@@ -92,6 +92,7 @@
     } 
 ?>
 	</div>
+
 	
     <script src="app.js"></script>
 
@@ -101,23 +102,27 @@
 
             <div class="container-body">
                 <div class="column1">
-                    <h1>Informacion del Equipo 4</h1>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ducimus fugit quidem cumque velit atque autem sequi, necessitatibus amet a nisi? Ad ullam, enim eaque quis voluptatibus eius recusandae nesciunt!</p>
+                    <br>
+                    <h1>¿Para qué es esta encuesta?</h1>
+                    <p>Esta encuesta es realizada por alumnos del Tecnológico de Monterrey en colaboración con PK
+Global. El propósito de esta encuesta es poder medir cambios de comportamiento que han 
+experimentado a través de la pandemia COVID-19. </p>
                     <br>
 
                 </div>
         
                 <div class="column2">
+                    <br>
                     <h1>Redes Sociales</h1>
 
                     <div class="row">
+                    
                         <img src="img/facebook.png">
                         <label>Siguenos en Facebook</label>
                     </div>
 
                     <div class="row">
-                        <img src="img/instagram.png">
+                        <img src="img/insta.png" href="https://www.instagram.com/tecdemonterrey/">
                         <label>Siguenos en Instagram</label>
                     </div>
                     
@@ -125,6 +130,8 @@
                 </div>
 
                 <div class="column3">
+                <br>
+
                     <h1>Informacion Contactos</h1>
 
                     <div class="row2">

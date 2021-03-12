@@ -80,6 +80,7 @@ nav{
         width: 40%;
         transform:translateX(100%);
         transition: transform 0.5s ease-in;
+        z-index: 100;
     }
     .nav-links li{
         opacity: 0;
@@ -179,43 +180,92 @@ input[type=submit]:hover {
 }
 /* Conoce más */
 
-.box-area{
+.container-conoce{
+    margin-top: 10%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
-.single-box{
+.container-conoce .box{
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    height: auto;
+    width: 350px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
     border-radius: 4px;
-    background-color: #fff;
-    text-align: center;
     margin: 20px;
-    padding: 20px;
-    transition: .3s;
-
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
 }
 
-.img-area{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container-conoce .box .icon{
+    position: relative;
     width: 80px;
     height: 80px;
-    border: 6px solid #ddd;
+    color: #fff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     border-radius: 50%;
-    margin-bottom: 10px;
-    padding: 20px;
-    -webkit-backgound-size: cover;
-    background-size: cover;
-    background-position: center center;
+    font-size: 40px;
+    font-weight: 700px;
+    transition-duration: 1s;
+}
+
+.container-conoce .box:nth-child(1) .icon{
+    box-shadow: 0 0 0 0 #517179;
+    background: #517179;
+}
+
+.container-conoce .box:nth-child(1):hover .icon{
+    box-shadow: 0 0 0 400px #517179;
+    background: #517179;
+}
+
+.container-conoce .box:nth-child(2) .icon{
+    box-shadow: 0 0 0 0 #797251;
+    background: #797251;
+}
+
+.container-conoce .box:nth-child(2):hover .icon{
+    box-shadow: 0 0 0 400px #797251;
+    background: #797251;
+}
+
+.container-conoce .box:nth-child(3) .icon{
+    box-shadow: 0 0 0 0 #575179;
+    background: #575179;
+}
+
+.container-conoce .box:nth-child(3):hover .icon{
+    box-shadow: 0 0 0 400px #575179;
+    background: #575179;
+}
+
+.container-conoce .box .content-conoce{
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;  
+}
+
+.container-conoce .box:hover .content-conoce{
+    color: #fff;
+
+}
+
+.container-conoce .box .content-conoce h3{
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.container-conoce .box .content-conoce p{
+    margin: 0;
+    padding: 0;   
 }
 
 /*Contactanos*/
