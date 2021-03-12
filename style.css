@@ -505,3 +505,36 @@ footer{
 }
 
 /*Encuesta*/
+
+.encuesta-format{
+	background-color:#AD99A4;
+	width:60%;
+	height:50%;
+	position:absolute;
+	left:20%;
+	bottom:30%;
+	font-family:Candara;
+}
+table {
+	background-color:#efefef;
+	width: 100% ;
+}
+tr, td {
+   width: 20%;
+   text-align: center	;
+}
+.option td {
+   width: 20%;
+   text-align: center;
+   background-color:#FaFaFa;
+   border-color:#AD99A4;
+}
+.opciones{
+	margin:2%;
+}
+
+.posenc{
+	left:82%;
+	bottom:10%;
+	position:absolute;
+}
