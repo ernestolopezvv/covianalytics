@@ -81,7 +81,7 @@
                 $stmt->bind_param("s", $email);
                 $stmt->execute();
                 echo "New record inserted sucessfully";
-				header ("Location: contactanos.html");
+				header ("Location: encuesta.html");
             }else
                 echo "Someone is using this email already";
 				
