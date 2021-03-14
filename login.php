@@ -135,17 +135,17 @@ experimentado a través de la pandemia COVID-19. </p>
 
                     <div class="row2">
                         <img src="img/house.png">
-                        <label>"México"</label>
+                        <label>México</label>
                     </div>
 
                     <div class="row2">
                         <img src="img/smartphone.png">
-                        <label>+52 6621680662</label>
+                        <label>+52 **********</label>
                     </div>
 
                     <div class="row2">
                         <img src="img/contact.png">
-                        <label>A00904052@itesm.mx</label>
+                        <label>contacto@covianalytics.com</label>
                     </div>
 
                 </div>
@@ -170,3 +170,4 @@ experimentado a través de la pandemia COVID-19. </p>
     
 </body>
 </html>
+
