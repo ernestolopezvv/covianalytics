@@ -9,6 +9,12 @@
     <title>Covianalytics</title>
 </head>
 
+<?php
+	session_start();
+	$idUsuario = $_SESSION['idUsuario'];
+	echo $_SESSION['idUsuario'];
+?>
+
 <body>
     <nav>
         <div class="logo"> 
@@ -30,7 +36,7 @@
     </nav>
 	
 	<div class="encuesta-format">
-		<form action="login.php" input type="submit"  value="Encuesta" >
+		<form action="preguntas.php" value="Encuesta" >
 		<label>Pregunta 1:</label><br>
 		
 		<table>
@@ -178,10 +184,11 @@
 	</div>
 	
 	<div class="posenc">
-		
 			<input type="submit"  value="Finalizar">
 		</form>
 	</div>
+	
+	
 
     <script src="app.js"></script>
     

@@ -76,12 +76,14 @@
 
             if($rnum == 0){
                 $stmt->close();
-
                 $stmt = $conn->prepare($INSERT);
                 $stmt->bind_param("s", $email);
                 $stmt->execute();
                 echo "New record inserted sucessfully";
-				header ("Location: encuesta.html");
+                session_start();
+                $_SESSION['idUsuario'] = $_POST['idUsuario'];
+                echo $_SESSION['idUsuario'];
+				header ("Location: encuesta.php");
             }else
                 echo "Someone is using this email already";
 				
