@@ -11,6 +11,33 @@
 
 <?php
 	session_start();
+
+	$dbhost = "localhost";
+    $dbuser = "root";
+    $dbpass = "";
+    $dbname = "covianalytics";
+
+	ini_set('display_errors','Off');
+	ini_set('error_reporting', E_ALL);
+	define('WP_DEBUG', false);
+	define('WP_DEBUG_DISPLAY', false);
+
+    $conn = new mysqli($dbhost,$dbuser,$dbpass,$dbname);
+
+	$sql = "SELECT Pregunta FROM preguntas;";
+	$result = $conn->query($sql);
+    $preguntas = array();
+    
+    if ($result->num_rows > 0) {
+      // Mostrar resultados
+      while($row = $result->fetch_assoc()) {
+         array_push($preguntas, $row["Pregunta"]);
+      }
+    } else {
+      echo "Error: No hay pregunta.";
+	  $conn->close();
+    }
+
 ?>
 
 <body>
@@ -35,7 +62,7 @@
 	
 	<div class="encuesta-format">
 		<form action="preguntas.php" value="Encuesta" >
-		<label>Pregunta 1:</label><br>
+		<label><?php echo "1.- " . $preguntas[0]?> </label><br>
 		
 		<table>
 			<tr class="option">
@@ -64,7 +91,7 @@
 			</tr>
 		</table>
 		
-		<label>Pregunta 2:</label><br>
+		<label><?php echo "2.- " . $preguntas[1]?></label><br>
 		
 		<table>
 			<tr class="option">
@@ -93,7 +120,7 @@
 			</tr>
 		</table>
 		
-		<label>Pregunta 3:</label><br>
+		<label><?php echo "3.- " . $preguntas[2]?></label><br>
 		
 		<table>
 			<tr class="option">
@@ -122,7 +149,7 @@
 			</tr>
 		</table>
 		
-		<label>Pregunta 4:</label><br>
+		<label><?php echo "4.- " . $preguntas[3]?></label><br>
 		
 		<table>
 			<tr class="option">
@@ -151,7 +178,7 @@
 			</tr>
 		</table>
 		
-		<label>Pregunta 5:</label><br>
+		<label><?php echo "5.- " . $preguntas[4]?></label><br>
 		
 		<table>
 			<tr class="option">
@@ -186,8 +213,6 @@
 		</form>
 	</div>
 	
-	
-
     <script src="app.js"></script>
     
 </body>
