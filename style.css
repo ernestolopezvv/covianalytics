@@ -529,6 +529,14 @@ footer{
 	position:relative;
 	left:20%;
 }
+.select-items {
+  position: absolute;
+  background-color: green;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
 .text-answer {
   display: block;
   position: relative;
@@ -577,10 +585,13 @@ footer{
 }
 .list-format{
 	background-color:#C4B1BB;
-	width: 60%;
+	width: 40%;
 	margin-bottom:1%;
 	position:relative;
-	left:20%;
+	left:30%;
+	text-align:center;
+}
+.formselect{
 }
 .posenc{
 	left:43%;

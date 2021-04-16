@@ -42,7 +42,7 @@
 			<b>Genero  </b> <br>
 		</div>
 		<div class="opciones">
-			<SELECT name="genero" id="genero">
+			<SELECT class="formselect" name="genero" id="genero">
 			<option value="no">Seleccione uno...</option>
 			<option value= "Hombre"> Hombre</option>
 			<option value= "Mujer"> Mujer</option>
