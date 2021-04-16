@@ -36,8 +36,18 @@
 	
 	<div class="encuesta-format">
 	<form action="login.php" input type="submit"  value="Encuesta" ><br>
-	
-
+		
+		<div class="pregunta">
+			<b>Genero  </b> <br>
+		</div>
+		<div class="opciones">
+			<SELECT name="genero" id="genero">
+			<option value= "Hombre"> Hombre</option>
+			<option value= "Mujer"> Mujer</option>
+			<option value= "Otro"> Otro</option>
+			
+		</SELECT>
+		</div>
 		
 			
 		<div class="pregunta">
@@ -158,59 +168,59 @@
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Comida a domicilio (Rappi, UberEats, etc)
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="p4-4" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4" value="Comida a domicilio" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Super a domicilio (víveres)
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="p4-3" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4" value="Super a domicilio" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer"> Muebles y/o electrodomésticos
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="p4-1" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4" value="Muebles y/o electrodomésticos" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer"> Coleccionables
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="p4-4" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4" value="Coleccionables" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Libros (físicos o electrónicos)
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="p4-3" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4" value="Libros" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer">Computadoras y/o electrónicos
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="p4-4" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4" value="Computadoras y/o electrónicos" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Herramientas y ferretería
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="p4-3" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4" value="Herramientas y ferretería" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer"> Entretenimiento (música, tv, videojuegos, juguetes, etc.)
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="p4-1" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4" value="Entretenimiento" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Programas o aplicaciones
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="p4-4" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4" value="Programas o aplicaciones" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Reservaciones y boletos
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="p4-3" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4" value="Reservaciones y boletos" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer"> Artículos de higiene
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="p4-1" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4" value="Artículos de higiene" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer"> Artículos deportivos
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="p4-4" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4" value="Artículos deportivos" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Otros
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="p4-3" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4" value="Otros" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer">No realizaba compras en línea
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="p4-4" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4" value="No realizaba compras en línea" ><br>
 			<span class="checkmark"></span>
 			</label>
 			
@@ -221,46 +231,44 @@
 		</div>
 		<div class="opciones"><br>
 			<label class="text-answer">7 horas o más al día.
-			<input type="radio" id="p5" class="opciones" name="p5" value="p1-1" required><br>
+			<input type="radio" id="p5" class="opciones" name="p5" value="7 horas o más al día" required><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">6 a 2 horas al día.
-			<input type="radio" id="p5" class="opciones" name="p5" value="p1-2" required><br>
+			<input type="radio" id="p5" class="opciones" name="p5" value="6 a 2 horas al día" required><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">6 a 2 horas a la semana.
-			<input type="radio" id="p5" class="opciones" name="p5" value="p1-3" required><br>
+			<input type="radio" id="p5" class="opciones" name="p5" value="6 a 2 horas a la semana" required><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer">Menos de 2 horas a la semana.
-			<input type="radio" id="p5" class="opciones" name="p5" value="p1-4" required><br>
+			<input type="radio" id="p5" class="opciones" name="p5" value="Menos de 2 horas a la semana" required><br>
 			<span class="checkmark"></span>
 			</label>
 		</div>
-		<br><hr><br>
-		
 		<div class="pregunta">
 			<b>6. ¿Qué tan seguido compra en línea ahora?</b> <br>
 		</div>
 		<div class="opciones">
 			<label class="text-answer">1 a 5 veces al mes.
-			<input type="radio" id="p6" class="opciones" name="p6" value="p1-1" required><br>
+			<input type="radio" id="p6" class="opciones" name="p6" value="1 a 5 veces al mes1" required><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">6 a 10 veces al mes.
-			<input type="radio" id="p6" class="opciones" name="p6" value="p1-2" required><br>
+			<input type="radio" id="p6" class="opciones" name="p6" value="6 a 10 veces al mes" required><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Más de 10 veces por mes.
-			<input type="radio" id="p6" class="opciones" name="p6" value="p1-3" required><br>
+			<input type="radio" id="p6" class="opciones" name="p6" value="Más de 10 veces por mes" required><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer">1 vez cada varios meses.
-			<input type="radio" id="p6" class="opciones" name="p6" value="p1-4" required><br>
+			<input type="radio" id="p6" class="opciones" name="p6" value="1 vez cada varios meses" required><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">No realizo compras en línea.
-			<input type="radio" id="p6" class="opciones" name="p6" value="p1-5" required><br>
+			<input type="radio" id="p6" class="opciones" name="p6" value="No realizo compras en línea" required><br>
 			<span class="checkmark"></span>	
 			</label>
 		</div>
@@ -476,8 +484,6 @@
 			</label>
 		</div>
 		
-		<br><hr><br>
-		
 		<div class="pregunta">
 			<b>13. Desde que empezó la pandemia, ¿ha presentado síntomas relacionados al COVID-19?  </b> <br>
 		</div>
@@ -533,103 +539,60 @@
 			<span class="checkmark"></span>	
 			</label>
 		</div>
-
+		
 		<div class="pregunta">
 			<b>15. ¿A causa de la pandemia usted se ha sentido relacionado con algunas de las siguientes situaciones? </b> <br>
 		</div>
 		<div class="opciones">
 		<br>
-			<label class="text-answer">Diabetes
-			<input type="checkbox" id="p15" class="opciones" name="p15" value="p2-1" ><br>
-			<span class="checkmark"></span>
-			</label>
-			<label class="text-answer">Hipertensión
-			<input type="checkbox" id="p15" class="opciones" name="p15" value="p5-4" ><br>
-			<span class="checkmark"></span>
-			</label>
-			<label class="text-answer">Obesidad
-			<input type="checkbox" id="p15" class="opciones" name="p15" value="p5-3" ><br>
-			<span class="checkmark"></span>	
-			</label>
-			<label class="text-answer"> Asma
-			<input type="checkbox" id="p15" class="opciones" name="p15" value="p2-1" ><br>
-			<span class="checkmark"></span>
-			</label>
-			<label class="text-answer"> Condiciones cardíacas
-			<input type="checkbox" id="p15" class="opciones" name="p15" value="p5-4" ><br>
-			<span class="checkmark"></span>
-			</label>
-			<label class="text-answer"> Inmunodeficiencia
-			<input type="checkbox" id="p15" class="opciones" name="p15" value="p5-3" ><br>
-			<span class="checkmark"></span>	
-			</label>
-			<label class="text-answer"> Hepatitis
-			<input type="checkbox" id="p15" class="opciones" name="p15" value="p5-4" ><br>
-			<span class="checkmark"></span>
-			</label>
-			<label class="text-answer">Otros no listados
-			<input type="checkbox" id="p15" class="opciones" name="p15" value="p5-4" ><br>
-			<span class="checkmark"></span>
-			</label>
-			<label class="text-answer">Ninguna
-			<input type="checkbox" id="p15" class="opciones" name="p15" value="p5-3" ><br>
-			<span class="checkmark"></span>	
-			</label>
-		</div>
-		
-		<div class="pregunta">
-			<b>16. ¿A causa de la pandemia usted se ha sentido relacionado con algunas de las siguientes situaciones? </b> <br>
-		</div>
-		<div class="opciones">
-		<br>
 			<label class="text-answer">Ansiedad
-			<input type="checkbox" id="p16" class="opciones" name="p16" value="p2-1" ><br>
+			<input type="checkbox" id="p15" class="opciones" name="p15" value="Ansiedad" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Estrés
-			<input type="checkbox" id="p16" class="opciones" name="p16" value="p5-4" ><br>
+			<input type="checkbox" id="p15" class="opciones" name="p15" value="Estrés" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Depresión
-			<input type="checkbox" id="p16" class="opciones" name="p16" value="p5-3" ><br>
+			<input type="checkbox" id="p15" class="opciones" name="p15" value="Depresión" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer"> Déficit de atención
-			<input type="checkbox" id="p16" class="opciones" name="p16" value="p2-1" ><br>
+			<input type="checkbox" id="p15" class="opciones" name="p15" value="Déficit de atención" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer"> Baja de rendimiento laboral/académico
-			<input type="checkbox" id="p16" class="opciones" name="p16" value="p5-4" ><br>
+			<input type="checkbox" id="p15" class="opciones" name="p15" value="Baja de rendimiento laboral/académico" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer"> Baja autoestima
-			<input type="checkbox" id="p16" class="opciones" name="p16" value="p5-3" ><br>
+			<input type="checkbox" id="p15" class="opciones" name="p15" value="Baja autoestima" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer">Otros no listados
-			<input type="checkbox" id="p16" class="opciones" name="p16" value="p5-4" ><br>
+			<input type="checkbox" id="p15" class="opciones" name="p15" value="Otros no listados" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Ninguna
-			<input type="checkbox" id="p16" class="opciones" name="p16" value="p5-3" ><br>
+			<input type="checkbox" id="p15" class="opciones" name="p15" value="Ninguna" ><br>
 			<span class="checkmark"></span>	
 			</label>
 		</div>
 		
 		<div class="pregunta">
-			<b>17. Durante la pandemia ¿Cómo ha cambiado su actividad física?  </b> <br>
+			<b>16. Durante la pandemia ¿Cómo ha cambiado su actividad física?  </b> <br>
 		</div>
 		<div class="opciones">
 			<label class="text-answer">Aumentó.
-			<input type="radio" id="p17" class="opciones" name="p17" value="p1-1" required><br>
+			<input type="radio" id="p16" class="opciones" name="p16" value="Aumentó" required><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Permaneció igual que antes.
-			<input type="radio" id="p17" class="opciones" name="p17" value="p1-1" required><br>
+			<input type="radio" id="p16" class="opciones" name="p16" value="Permaneció igual que antes" required><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Disminuyó.
-			<input type="radio" id="p17" class="opciones" name="p17" value="p1-2" required><br>
+			<input type="radio" id="p16" class="opciones" name="p16" value="Disminuyó" required><br>
 			<span class="checkmark"></span>
 			</label>
 		</div>
