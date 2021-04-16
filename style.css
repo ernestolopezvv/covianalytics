@@ -588,7 +588,7 @@ footer{
 }
 @media screen and (max-width: 768px) {
 	
-.pregunta{
+	.pregunta{
 	width:80%;
 	left:10%;
 	height:6%;
