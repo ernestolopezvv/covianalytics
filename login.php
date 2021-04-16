@@ -46,13 +46,16 @@
 	<div class="message">
 	<?php
 
+    session_start();
+
+
     $dbhost = "localhost";
     $dbuser = "root";
     $dbpass = "";
     $dbname = "covianalytics";
 
 	ini_set('display_errors','Off');
-	ini_set('error_reporting', E_ALL );
+	ini_set('error_reporting', E_ALL);
 	define('WP_DEBUG', false);
 	define('WP_DEBUG_DISPLAY', false);
 
@@ -67,6 +70,12 @@
             $SELECT = "SELECT email FROM usuario WHERE email = ? Limit 1";
             $INSERT = "INSERT INTO usuario (email) VALUES (?)";
 
+            function set_session_idusuario($result)
+            {
+            $row = $result->fetch_assoc();
+            $_SESSION ['idUsuario'] = $row["idUsuario"]; 
+            }
+
             $stmt = $conn->prepare($SELECT);
             $stmt->bind_param("s", $email);
             $stmt->execute();
@@ -80,13 +89,12 @@
                 $stmt->bind_param("s", $email);
                 $stmt->execute();
                 echo "New record inserted sucessfully";
-                session_start();
-                $_SESSION['idUsuario'] = $_POST['idUsuario'];
-                echo $_SESSION['idUsuario'];
+                $sql = "SELECT idUsuario, email FROM usuario WHERE Correo = '".htmlspecialchars($_GET["email"])."'" ;
+                $result = $conn->query($sql);
+                set_session_idusuario($result);
 				header ("Location: encuesta.php");
             }else
                 echo "Someone is using this email already";
-				
 				/*echo"<script>alert('Someone is using this email already')</script>";*/
         }
         $stmt->close();

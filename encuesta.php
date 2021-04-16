@@ -11,8 +11,6 @@
 
 <?php
 	session_start();
-	$idUsuario = $_SESSION['idUsuario'];
-	echo $_SESSION['idUsuario'];
 ?>
 
 <body>

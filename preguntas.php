@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 $dbhost = "localhost";
 $dbuser = "root";
 $dbpass = "";
@@ -15,12 +17,12 @@ if ($conn->connect_error){
 // Insertar respuestas
 
 $sql = "INSERT INTO respuestas (Respuesta, Preguntas_idPreguntas, Usuario_idUsuario) VALUES
-('".htmlspecialchars($GET_["p1"])."', 1, 1)
+('".htmlspecialchars($_GET["p1"])."', 1, ".$_SESSION ['idUsuario'].") 
+
 ";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
-    readfile("dashboard.html");
   } 
   else {
     echo "Error: " . $sql . "<br>" . $conn->error;
