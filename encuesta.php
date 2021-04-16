@@ -75,7 +75,7 @@
 			<b>Estado Civil  </b> <br>
 		</div>
 		<div class="opciones">
-			<SELECT name="Estado Civil" id="estadoCivil">
+			<SELECT name="Estado Civil" id="Estado Civil">
 			<option value="no">Seleccione uno...</option>
 			<option value= "Soltero"> Soltero</option>
 			<option value= "Casado"> Casado</option>
