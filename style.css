@@ -581,6 +581,10 @@ footer{
 	border-radius: 50%;
 	background: white;
 }
+.list-format{
+	background-color:#C4B1BB;
+	width: 60%;
+}
 .posenc{
 	left:43%;
 	bottom:-472%;

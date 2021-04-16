@@ -37,6 +37,7 @@
 	<div class="encuesta-format">
 	<form action="login.php" input type="submit"  value="Encuesta" ><br>
 		
+		<div class="list-format">
 		<div class="pregunta">
 			<b>Genero  </b> <br>
 		</div>
@@ -181,6 +182,7 @@
 			<option value="Yucatán">Yucatán</option>
 			<option value="Zacatecas">Zacatecas</option>
 		</SELECT>
+		</div>
 		</div>
 		
 			
