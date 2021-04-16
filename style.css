@@ -559,12 +559,6 @@ footer{
 .text-answer input:checked ~ .checkmark {
   background-color: #5d4954;
 }
-.loption{
-	background-color:#ff0;
-	width: 100%;
-	position:relative;
-	bottom:30%;
-}
 .checkmark:after {
   content: "";
   position: absolute;
@@ -584,6 +578,9 @@ footer{
 .list-format{
 	background-color:#C4B1BB;
 	width: 60%;
+	margin-bottom:1%;
+	position:relative;
+	left:20%;
 }
 .posenc{
 	left:43%;
