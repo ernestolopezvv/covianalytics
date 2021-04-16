@@ -42,10 +42,144 @@
 		</div>
 		<div class="opciones">
 			<SELECT name="genero" id="genero">
+			<option value="no">Seleccione uno...</option>
 			<option value= "Hombre"> Hombre</option>
 			<option value= "Mujer"> Mujer</option>
 			<option value= "Otro"> Otro</option>
 			
+		</SELECT>
+		</div>
+		<div class="pregunta">
+			<b>Edad  </b> <br>
+		</div>
+		<div class="opciones">
+			<SELECT name="edad" id="edad">
+			<option value="no">Seleccione uno...</option>
+			<option value= "menos de 15 años"> Menos de 15 años</option>
+			<option value= "15 - 20 años"> 15 - 20 años</option>
+			<option value= "21 - 25 años"> 21 - 25 años</option>
+			<option value= "26 - 30 años"> 26 - 30 años</option>
+			<option value= "31 - 35 años"> 31 - 35 años</option>
+			<option value= "36 - 40 años"> 36 - 40 años</option>
+			<option value= "41 - 45 años"> 41 - 45 años</option>
+			<option value= "46 - 50 años"> 46 - 50 años</option>
+			<option value= "31 - 55 años"> 51 - 55 años</option>
+			<option value= "36 - 60 años"> 56 - 60 años</option>
+			<option value= "41 - 65 años"> 41 - 65 años</option>
+			<option value= "46 - 70 años"> 46 - 70 años</option>
+			<option value= "Más de 70"> Más de 70</option>
+		</SELECT>
+		</div>
+		<div class="pregunta">
+			<b>Estado Civil  </b> <br>
+		</div>
+		<div class="opciones">
+			<SELECT name="Estado Civil" id="estadoCivil">
+			<option value="no">Seleccione uno...</option>
+			<option value= "Soltero"> Soltero</option>
+			<option value= "Casado"> Casado</option>
+			<option value= "Divorciado"> Divorciado</option>
+			<option value= "Unión Libre"> Unión Libre</option>
+			<option value= "Viudo"> Viudo</option>
+			
+		</SELECT>
+		</div>
+		<div class="pregunta">
+			<b>Nivel máximo de estudios  </b> <br>
+		</div>
+		<div class="opciones">
+			<SELECT name="estudios" id="estudios">
+			<option value="no">Seleccione uno...</option>
+			<option value= "No aplica"> No aplica</option>
+			<option value= "Primaria"> Primaria</option>
+			<option value= "Secundaria"> Secundaria</option>
+			<option value= "Preparatoria"> Preparatoria</option>
+			<option value= "Universidad"> Universidad</option>
+			<option value= "Maestría"> Maestría</option>
+			<option value= "Doctorado"> Doctorado</option>
+			
+		</SELECT>
+		</div>
+		<div class="pregunta">
+			<b>Ocupación  </b> <br>
+		</div>
+		<div class="opciones">
+		<SELECT name="ocupación" id="ocupación">
+			<option value="no">Seleccione uno...</option>
+			<option value= "Sector industrial"> Sector industrial</option>
+			<option value= "Sector educativo"> Sector educativo</option>
+			<option value= "Sector gubernamental"> Sector gubernamental</option>
+			<option value= "Sector de comercio"> Sector de comercio</option>
+			<option value= "Sector de transporte"> Sector de transporte</option>
+			<option value= "Sector de comida"> Sector de comida</option>
+			<option value= "Sector de alojamiento"> Sector de alojamiento</option>
+			<option value= "Sector de construcción"> Sector de construcción </option>
+			<option value= "Sector de suministro de energía"> Sector de energía</option>
+			<option value= "Sector de actividades inmobiliarias"> Sector de actividades inmobiliarias</option>
+			<option value= "Sector artístico"> Sector artístico</option>
+			<option value= "Sector de pesca y acuicultura"> Sector de pesca y acuicultura</option>
+			<option value= "Sector de informática"> Sector de informática</option>
+			<option value= "Sector de servicios financieros"> Sector de servicios financieros</option>
+			<option value= "Sector judicial"> Sector judicial</option>
+			<option value= "Hogar"> Hogar </option>
+			<option value= "Estudiante"> Estudiante</option>
+			<option value= "Otro"> Otro </option>
+			
+		</SELECT>
+		</div>
+		<div class="pregunta">
+			<b>Ingreso económico mensual  </b> <br>
+		</div>
+		<div class="opciones">
+			<SELECT name="ingreso" id="ingreso">
+			<option value="no">Seleccione uno...</option>
+			<option value= "No percibo algún ingreso"> No percibo algún ingreso</option>
+			<option value= "Menos de 1,000"> Menos de 1,000</option>
+			<option value= "1,000 - 10,000"> 1,000 - 10,000</option>
+			<option value= "10,000 - 30,000"> 10,000 - 30,000</option>
+			<option value= "30,000 - 50,000"> 30,000 - 50,000</option>
+			<option value= "50,000+"> 50,000+</option>
+			
+		</SELECT>
+		</div>
+		<div class="pregunta">
+			<b>Estado  </b> <br>
+		</div>
+		<div class="opciones">
+			<SELECT name="estado" id="estado">
+			<option value="no">Seleccione uno...</option>
+			<option value="Aguascalientes">Aguascalientes</option>
+			<option value="Baja California">Baja California</option>
+			<option value="Baja California Sur">Baja California Sur</option>
+			<option value="Campeche">Campeche</option>
+			<option value="Chiapas">Chiapas</option>
+			<option value="Chihuahua">Chihuahua</option>
+			<option value="CDMX">Ciudad de México</option>
+			<option value="Coahuila">Coahuila</option>
+			<option value="Colima">Colima</option>
+			<option value="Durango">Durango</option>
+			<option value="Estado de México">Estado de México</option>
+			<option value="Guanajuato">Guanajuato</option>
+			<option value="Guerrero">Guerrero</option>
+			<option value="Hidalgo">Hidalgo</option>
+			<option value="Jalisco">Jalisco</option>
+			<option value="Michoacán">Michoacán</option>
+			<option value="Morelos">Morelos</option>
+			<option value="Nayarit">Nayarit</option>
+			<option value="Nuevo León">Nuevo León</option>
+			<option value="Oaxaca">Oaxaca</option>
+			<option value="Puebla">Puebla</option>
+			<option value="Querétaro">Querétaro</option>
+			<option value="Quintana Roo">Quintana Roo</option>
+			<option value="San Luis Potosí">San Luis Potosí</option>
+			<option value="Sinaloa">Sinaloa</option>
+			<option value="Sonora">Sonora</option>
+			<option value="Tabasco">Tabasco</option>
+			<option value="Tamaulipas">Tamaulipas</option>
+			<option value="Tlaxcala">Tlaxcala</option>
+			<option value="Veracruz">Veracruz</option>
+			<option value="Yucatán">Yucatán</option>
+			<option value="Zacatecas">Zacatecas</option>
 		</SELECT>
 		</div>
 		
@@ -251,16 +385,16 @@
 			<b>6. ¿Qué tan seguido compra en línea ahora?</b> <br>
 		</div>
 		<div class="opciones">
-			<label class="text-answer">1 a 5 veces al mes.
-			<input type="radio" id="p6" class="opciones" name="p6" value="1 a 5 veces al mes1" required><br>
-			<span class="checkmark"></span>
-			</label>
-			<label class="text-answer">6 a 10 veces al mes.
-			<input type="radio" id="p6" class="opciones" name="p6" value="6 a 10 veces al mes" required><br>
-			<span class="checkmark"></span>
-			</label>
 			<label class="text-answer">Más de 10 veces por mes.
 			<input type="radio" id="p6" class="opciones" name="p6" value="Más de 10 veces por mes" required><br>
+			<span class="checkmark"></span>
+			</label>
+			<label class="text-answer">10 a 6 veces al mes.
+			<input type="radio" id="p6" class="opciones" name="p6" value="10 a 6 veces al mes" required><br>
+			<span class="checkmark"></span>
+			</label>
+			<label class="text-answer">5 a 1 vez por mes.
+			<input type="radio" id="p6" class="opciones" name="p6" value="5 a 1 veces al mes" required><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer">1 vez cada varios meses.
