@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!--<!DOCTYPE html>-->
 <html lang="en">
 <head>
@@ -46,13 +50,10 @@
 	<div class="message">
 	<?php
 
-    session_start();
-
-
     $dbhost = "localhost";
     $dbuser = "root";
     $dbpass = "";
-    $dbname = "covianalytics";
+    $dbname = "covianalytics1";
 
 	ini_set('display_errors','Off');
 	ini_set('error_reporting', E_ALL);
@@ -70,12 +71,6 @@
             $SELECT = "SELECT email FROM usuario WHERE email = ? Limit 1";
             $INSERT = "INSERT INTO usuario (email) VALUES (?)";
 
-            function set_session_idusuario($result)
-            {
-            $row = $result->fetch_assoc();
-            $_SESSION ['idUsuario'] = $row["idUsuario"]; 
-            }
-
             $stmt = $conn->prepare($SELECT);
             $stmt->bind_param("s", $email);
             $stmt->execute();
@@ -88,10 +83,9 @@
                 $stmt = $conn->prepare($INSERT);
                 $stmt->bind_param("s", $email);
                 $stmt->execute();
+                $idUsuario = mysqli_insert_id($conn);
+                $_SESSION['idUsuario'] = $idUsuario;
                 echo "New record inserted sucessfully";
-                $sql = "SELECT idUsuario, email FROM usuario WHERE Correo = '".htmlspecialchars($_GET["email"])."'" ;
-                $result = $conn->query($sql);
-                set_session_idusuario($result);
 				header ("Location: encuesta.php");
             }else
                 echo "Someone is using this email already";

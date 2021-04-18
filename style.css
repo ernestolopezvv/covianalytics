@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 /* Responsive navigation bar */
 
 nav{
@@ -120,7 +119,6 @@ nav{
     transform: rotate(45deg) translate(-5px,-6px);
 }
 
-/*logos*/
 .img-logo{
 	width:8%;
 	position:relative;
@@ -129,8 +127,6 @@ nav{
 	opacity:50%
 }
 
-
-/*Login*/
 .message{
 	background-color:#ffb5b5;
 	width: 25%;
@@ -148,7 +144,7 @@ nav{
 	left: 35%;
 	width: 30%;
 	text-align: center;
-	font-family: Candara;
+	font-family: 'Candara';
 	
 }
 
@@ -179,7 +175,7 @@ input[type=submit]:hover {
   background-color: #9F9F9F;
 }
 
-/*Phone Login*/
+
 @media screen and (max-width: 768px) {
 	.format-index{
 	left: 12.5%;
@@ -190,8 +186,9 @@ input[type=submit]:hover {
 	bottom:13%;
 	left: 17.5%;
 }
-	
 }
+	
+
 
 /* Conoce más */
 
@@ -282,8 +279,7 @@ input[type=submit]:hover {
     margin: 0;
     padding: 0;   
 }
-/*
-/*Contactanos*/
+
 .contacts {
 	background-color: #AD99A4;
 	border-radius:6px;
@@ -311,7 +307,7 @@ input[type=submit]:hover {
 	left:35%;
 	bottom: 80%;
 	text-align:justify;
-	font-family:Candara;
+	font-family:'Candara';
 	font-size:125%;
 }
 
@@ -335,7 +331,7 @@ input[type=submit]:hover {
 	position:absolute;
 }
 
-/*Phone contactanos*/
+
 @media screen and (max-width: 768px) {
 	
 	.contacts {
@@ -504,12 +500,13 @@ footer{
     }
 }
 
-/*Encuesta*/
+
 .encuesta-format{
-	font-family:Candara;
+	font-family:'Candara';
 	margin-top:1%;
 	margin-bottom:1.5%;
 }
+
 .pregunta{
 	background-color:#C4B1BB;
 	width:60%;
@@ -521,7 +518,6 @@ footer{
 	padding-top:.2%;
 	font-size:20px;
 	z-index:100;
-	
 }
 .opciones{
 	background-color:#C4B1BB;
@@ -583,10 +579,49 @@ footer{
 }
 .posenc{
 	left:43%;
-	bottom:-472%;
+	bottom: -700%;
 	position:absolute;
 }
-/*mensaje*/
+
+.list-format{
+	background-color:#C4B1BB;
+	width: 40%;
+	margin-bottom:1%;
+	position:relative;
+	left:30%;
+	text-align:center;
+}
+
+@media screen and (max-width: 768px) {
+	
+	.pregunta{
+	width:80%;
+	left:10%;
+	height:6%;
+	font-size:16px;
+}
+}
+
+.opciones{
+	width: 80%;
+	position:relative;
+	left:10%;
+}
+.text-answer {
+  padding-left: 8.5%;
+  font-size: 16px;
+}
+.checkmark {
+  margin-left: 3%;
+  height: 14px;
+  width: 14px;
+}
+
+.posenc{
+	left:22%;
+	bottom:-700%;
+}
+
 .message-format{
 	background-color:#AD99A4;
 	width:40%;
@@ -594,9 +629,10 @@ footer{
 	position:absolute;
 	left:30%;
 	bottom:40%;
-	font-family:Candara;
+	font-family:'Candara';
 	border-radius:10px;
 }
+
 .posmess{
 	left:32%;
 	bottom:-40%;
