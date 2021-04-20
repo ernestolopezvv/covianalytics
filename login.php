@@ -33,8 +33,7 @@
             <div class="line3"></div>
         </div>
     </nav>
-	
-	
+
 	<div class="format-index">
 		<form action="login.php" method="POST">
 			<br><h2>Introduce tu email</h2>

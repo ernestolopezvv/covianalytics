@@ -47,20 +47,8 @@
         <div class="logo"> 
             <h4>Covianalytics</h4>
         </div>            
-        <ul class="nav-links">
-            <li>
-                <a href="conocemas.html">Conoce más</a>
-            </li>
-            <li>
-                <a href="contactanos.html">Contáctanos</a>
-            </li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
     </nav>
+	
 	<div class="encuesta-format">
 	<form action="preguntas.php" input type="submit"  value="Encuesta" ><br>
 		

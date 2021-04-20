@@ -359,6 +359,11 @@ input[type=submit]:hover {
 	.line{
 	bottom: 30%;
 	}
+
+    .pos1{
+    left: -22%;
+    bottom: -5%;
+    }
 }
 
 /* Footer */
@@ -578,8 +583,8 @@ footer{
 	background: white;
 }
 .posenc{
-	left:43%;
-	bottom: -700%;
+	left:25%;
+	bottom: 100px;
 	position:absolute;
 }
 
@@ -618,8 +623,8 @@ footer{
 }
 
 .posenc{
-	left:22%;
-	bottom:-700%;
+	left:44%;
+	bottom:-420%;
 }
 
 .message-format{
@@ -638,3 +643,17 @@ footer{
 	bottom:-40%;
 	position:absolute;
 }
+
+.pos1{
+    left: 1087px;
+    bottom: 100px;
+	position:absolute;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}    
