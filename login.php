@@ -11,13 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 	<LINK HREF="logokfj.ico" REL="icon">
-    <title>Covianalytics</title>
+    <title>Coronanalyst</title>
 </head>
 
 <body>
     <nav>
         <div class="logo"> 
-            <h4>Covianalytics</h4>
+            <h4>Coronanalyst</h4>
         </div>            
         <ul class="nav-links">
             <li>
