@@ -139,13 +139,32 @@ nav{
 	background-color: #efefef;
 	border-radius:8px;
     border: 1px solid #ccc;
-	position:relative;
-	bottom: -9%;
-	left: 35%;
+	position:absolute;
+	top: 19%;
+	left: 55%;
 	width: 30%;
 	text-align: center;
 	font-family: 'Candara';
 	
+}
+
+.info-index{
+	width:40%;
+	position:absolute;
+	top:13%;
+	bottom:5%;
+	height:55%;
+	font-family:'candara';
+	text-align:center;
+	text-top:-50%;
+	border-right-style:outset;
+	text-bottom:40%;
+}
+.text-index{
+	width:80%;
+	margin-left:10%;
+	margin-top:25%;
+	background-color:rgb(228, 228, 228);
 }
 
 input[type=email] {
@@ -181,6 +200,19 @@ input[type=submit]:hover {
 	left: 12.5%;
 	width: 75%;
 	}
+	.info-index{
+		width:90%;
+		margin-left:5%;
+		top:55%;
+		border-top-style:outset;
+		border-right-style:none;
+		position:relative;
+	}
+	.text-index{
+		margin-top:8%;
+		margin-bottom:8%;
+        border-radius:10px;
+	} 
 	.message{
 	width: 65%;
 	bottom:13%;
@@ -390,7 +422,7 @@ footer{
     background: #5d4954;
     color: #ddd;
     position: relative;
-    bottom: -30%;   
+    bottom: -65%;   
 }
 
 .container-footer-all{
@@ -404,23 +436,10 @@ footer{
     justify-content: space-between;
 }
 
-.column1{
-    max-width: 400px;
-    margin-left: 5%;
-}
-.column1 h1{
-    font-size: 22px;
-}
-
-.column1 p{
-    font-size: 14px;
-    color: #c7c7c7;
-    margin-top: 20px;
-}
 
 .column2{
     max-width: 400px;
-    margin-left: -7%;
+    margin-left: 25%;
 }
 
 .column2 h1{
@@ -447,6 +466,7 @@ footer{
 .column3 {
     max-width: 400px;
     font-size: 15px;
+	margin-right:25%;
 }
 
 .column3 h1 {
