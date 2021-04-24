@@ -33,7 +33,16 @@
             <div class="line3"></div>
         </div>
     </nav>
-
+	
+	<div class="info-index">
+		<div class="text-index">
+		<h1>¿Para qué es esta encuesta?</h1>
+                    <p>Esta encuesta es realizada por alumnos del Tecnológico de Monterrey en colaboración con PK
+					Global. El propósito de esta encuesta es poder medir cambios de comportamiento que han 
+experimentado a través de la pandemia COVID-19. </p>
+		</div>
+	</div>
+	
 	<div class="format-index">
 		<form action="login.php" method="POST">
 			<br><h2>Introduce tu email</h2>
@@ -103,18 +112,8 @@
         <div class="container-footer-all">
 
             <div class="container-body">
-                <div class="column1">
-                    <br>
-                    <h1>¿Para qué es esta encuesta?</h1>
-                    <p>Esta encuesta es realizada por alumnos del Tecnológico de Monterrey en colaboración con PK
-Global. El propósito de esta encuesta es poder medir cambios de comportamiento que han 
-experimentado a través de la pandemia COVID-19. </p>
-                    <br>
-
-                </div>
-        
                 <div class="column2">
-                    <br>
+                <br>
                     <h1>Redes Sociales</h1>
 
                     <div class="row">
@@ -127,8 +126,7 @@ experimentado a través de la pandemia COVID-19. </p>
                         <img src="img/insta.png" href="https://www.instagram.com/tecdemonterrey/">
                         <label>Siguenos en Instagram</label>
                     </div>
-                    
-                    
+
                 </div>
 
                 <div class="column3">
