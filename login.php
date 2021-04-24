@@ -52,7 +52,7 @@
     $dbhost = "localhost";
     $dbuser = "root";
     $dbpass = "";
-    $dbname = "covianalytics1";
+    $dbname = "covianalytics3";
 
 	ini_set('display_errors','Off');
 	ini_set('error_reporting', E_ALL);

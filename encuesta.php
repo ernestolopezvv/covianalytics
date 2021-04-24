@@ -18,7 +18,7 @@
 	$dbhost = "localhost";
     $dbuser = "root";
     $dbpass = "";
-    $dbname = "covianalytics1";
+    $dbname = "covianalytics3";
 
 	ini_set('display_errors','Off');
 	ini_set('error_reporting', E_ALL);
@@ -45,12 +45,12 @@
 <body>
     <nav>
         <div class="logo"> 
-            <h4>Covianalytics</h4>
+            <h4>Coronanalyst</h4>
         </div>            
     </nav>
 	
 	<div class="encuesta-format">
-	<form action="preguntas.php" input type="submit"  value="Encuesta" ><br>
+	<form action="preguntas.php" method="POST"><br>
 		
 		<div class="list-format">
 		<div class="pregunta">
@@ -233,35 +233,35 @@
 		</div>
 		<div class="opciones">
 			<label class="text-answer"> Mercado Libre
-			<input type="checkbox" id="p2" class="opciones" name="p2" value="MercadoLibre"><br>
+			<input type="checkbox" id="p2" class="opciones" name="p2[ ]" value="MercadoLibre"><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Amazon
-			<input type="checkbox" id="p2" class="opciones" name="p2" value="Amazon" ><br>
+			<input type="checkbox" id="p2" class="opciones" name="p2[ ]" value="Amazon" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Facebook Marketplace
-			<input type="checkbox" id="p2" class="opciones" name="p2" value="FacebookMarketplace" ><br>
+			<input type="checkbox" id="p2" class="opciones" name="p2[ ]" value="FacebookMarketplace" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer"> Alibaba / Aliexpress
-			<input type="checkbox" id="p2" class="opciones" name="p2" value="Alibaba" ><br>
+			<input type="checkbox" id="p2" class="opciones" name="p2[ ]" value="Alibaba" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer"> eBay
-			<input type="checkbox" id="p2" class="opciones" name="p2" value="eBay" ><br>
+			<input type="checkbox" id="p2" class="opciones" name="p2[ ]" value="eBay" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">E-shop propia de cada marca (Nike, Supreme, Walmart, Liverpool, etc)
-			<input type="checkbox" id="p2" class="opciones" name="p2" value="E-shop" ><br>
+			<input type="checkbox" id="p2" class="opciones" name="p2[ ]" value="E-shop" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer">Otros
-			<input type="checkbox" id="p2" class="opciones" name="p2" value="Otros" ><br>
+			<input type="checkbox" id="p2" class="opciones" name="p2[ ]" value="Otros" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">No realizaba compras en línea
-			<input type="checkbox" id="p2" class="opciones" name="p2" value="No realizaba compras en línea" ><br>
+			<input type="checkbox" id="p2" class="opciones" name="p2[ ]" value="No realizaba compras en línea" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			
@@ -271,107 +271,106 @@
 		</div>
 		<div class="opciones">
 			<label class="text-answer"> Tarjeta de crédito
-			<input type="checkbox" id="p3" class="opciones" name="p3" value="Tarjeta de crédito"><br>
+			<input type="checkbox" id="p3" class="opciones" name="p3[ ]" value="Tarjeta de crédito"><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Tarjeta de débito
-			<input type="checkbox" id="p3" class="opciones" name="p3" value="Tarjeta de débito" ><br>
+			<input type="checkbox" id="p3" class="opciones" name="p3[ ]" value="Tarjeta de débito" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Paypal
-			<input type="checkbox" id="p3" class="opciones" name="p3" value="Paypal"><br>
+			<input type="checkbox" id="p3" class="opciones" name="p3[ ]" value="Paypal"><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer"> Mercado Pago
-			<input type="checkbox" id="p3" class="opciones" name="p3" value="Mercado Pago"><br>
+			<input type="checkbox" id="p3" class="opciones" name="p3[ ]" value="Mercado Pago"><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer"> Efectivo
-			<input type="checkbox" id="p3" class="opciones" name="p3" value="Efectivo"><br>
+			<input type="checkbox" id="p3" class="opciones" name="p3[ ]" value="Efectivo"><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer"> Transferencia electrónica
-			<input type="checkbox" id="p3" class="opciones" name="p3" value="Transferencia electrónica"><br>
+			<input type="checkbox" id="p3" class="opciones" name="p3[ ]" value="Transferencia electrónica"><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer"> Depósito en tiendas de conveniencia (Oxxo, 7Eleven, etc.)
-			<input type="checkbox" id="p3" class="opciones" name="p3" value="Depósito en tiendas"><br>
+			<input type="checkbox" id="p3" class="opciones" name="p3[ ]" value="Depósito en tiendas"><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Otros
-			<input type="checkbox" id="p3" class="opciones" name="p3" value="Otros"><br>
+			<input type="checkbox" id="p3" class="opciones" name="p3[ ]" value="Otros"><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">No realizaba compras en línea
-			<input type="checkbox" id="p3" class="opciones" name="p3" value="No realizaba compras en línea"><br>
+			<input type="checkbox" id="p3" class="opciones" name="p3[ ]" value="No realizaba compras en línea"><br>
 			<span class="checkmark"></span>	
 			</label>
 		</div>
 	
-
 
 		<div class="pregunta">
 			<b><?php echo "11.- " . $preguntas[10]?></b>  <br>
 		</div>
 		<div class="opciones">
 			<label class="text-answer"> Ropa
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="Ropa" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4[ ]" value="Ropa" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Comida a domicilio (Rappi, UberEats, etc)
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="Comida a domicilio" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4[ ]" value="Comida a domicilio" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Super a domicilio (víveres)
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="Super a domicilio" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4[ ]" value="Super a domicilio" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer"> Muebles y/o electrodomésticos
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="Muebles y/o electrodomésticos" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4[ ]" value="Muebles y/o electrodomésticos" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer"> Coleccionables
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="Coleccionables" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4[ ]" value="Coleccionables" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Libros (físicos o electrónicos)
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="Libros" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4[ ]" value="Libros" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer">Computadoras y/o electrónicos
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="Computadoras y/o electrónicos" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4[ ]" value="Computadoras y/o electrónicos" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Herramientas y ferretería
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="Herramientas y ferretería" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4[ ]" value="Herramientas y ferretería" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer"> Entretenimiento (música, tv, videojuegos, juguetes, etc.)
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="Entretenimiento" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4[ ]" value="Entretenimiento" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Programas o aplicaciones
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="Programas o aplicaciones" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4[ ]" value="Programas o aplicaciones" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Reservaciones y boletos
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="Reservaciones y boletos" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4[ ]" value="Reservaciones y boletos" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer"> Artículos de higiene
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="Artículos de higiene" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4[ ]" value="Artículos de higiene" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer"> Artículos deportivos
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="Artículos deportivos" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4[ ]" value="Artículos deportivos" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Otros
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="Otros" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4[ ]" value="Otros" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer">No realizaba compras en línea
-			<input type="checkbox" id="p4" class="opciones" name="p4" value="No realizaba compras en línea" ><br>
+			<input type="checkbox" id="p4" class="opciones" name="p4[ ]" value="No realizaba compras en línea" ><br>
 			<span class="checkmark"></span>
 			</label>
 			
@@ -429,35 +428,35 @@
 		</div>
 		<div class="opciones">
 			<label class="text-answer"> Mercado Libre
-			<input type="checkbox" id="p7" class="opciones" name="p7" value="Mercado Libre" ><br>
+			<input type="checkbox" id="p7" class="opciones" name="p7[ ]" value="Mercado Libre" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Amazon
-			<input type="checkbox" id="p7" class="opciones" name="p7" value="Amazon" ><br>
+			<input type="checkbox" id="p7" class="opciones" name="p7[ ]" value="Amazon" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Facebook Marketplace
-			<input type="checkbox" id="p7" class="opciones" name="p7" value="Facebook Marketplace3" ><br>
+			<input type="checkbox" id="p7" class="opciones" name="p7[ ]" value="Facebook Marketplace3" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer"> Alibaba / Aliexpress
-			<input type="checkbox" id="p7" class="opciones" name="p7" value="Alibaba/Aliexpress" ><br>
+			<input type="checkbox" id="p7" class="opciones" name="p7[ ]" value="Alibaba/Aliexpress" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer"> eBay
-			<input type="checkbox" id="p7" class="opciones" name="p7" value="eBay"><br>
+			<input type="checkbox" id="p7" class="opciones" name="p7[ ]" value="eBay"><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">E-shop propia de cada marca (Nike, Supreme, Walmart, Liverpool, etc)
-			<input type="checkbox" id="p7" class="opciones" name="p7" value="E-shop" ><br>
+			<input type="checkbox" id="p7" class="opciones" name="p7[ ]" value="E-shop" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer">Otros
-			<input type="checkbox" id="p7" class="opciones" name="p7" value="Otros" ><br>
+			<input type="checkbox" id="p7" class="opciones" name="p7[ ]" value="Otros" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">No realizo compras en línea
-			<input type="checkbox" id="p7" class="opciones" name="p7" value="No realizo compras en línea" ><br>
+			<input type="checkbox" id="p7" class="opciones" name="p7[ ]" value="No realizo compras en línea" ><br>
 			<span class="checkmark"></span>	
 			</label>
 		</div>
@@ -467,39 +466,39 @@
 		</div>
 		<div class="opciones">
 			<label class="text-answer"> Tarjeta de crédito
-			<input type="checkbox" id="p8" class="opciones" name="p8" value="Tarjeta de crédito" ><br>
+			<input type="checkbox" id="p8" class="opciones" name="p8[ ]" value="Tarjeta de crédito" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Tarjeta de débito
-			<input type="checkbox" id="p8" class="opciones" name="p8" value="Tarjeta de débito" ><br>
+			<input type="checkbox" id="p8" class="opciones" name="p8[ ]" value="Tarjeta de débito" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Paypal
-			<input type="checkbox" id="p8" class="opciones" name="p8" value="Paypal" ><br>
+			<input type="checkbox" id="p8" class="opciones" name="p8[ ]" value="Paypal" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer"> Mercado Pago
-			<input type="checkbox" id="p8" class="opciones" name="p8" value="Mercado Pago" ><br>
+			<input type="checkbox" id="p8" class="opciones" name="p8[ ]" value="Mercado Pago" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer"> Efectivo
-			<input type="checkbox" id="p8" class="opciones" name="p8" value="Efectivo" ><br>
+			<input type="checkbox" id="p8" class="opciones" name="p8[ ]" value="Efectivo" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer"> Transferencia electrónica
-			<input type="checkbox" id="p8" class="opciones" name="p8" value="Transferencia electrónica" ><br>
+			<input type="checkbox" id="p8" class="opciones" name="p8[ ]" value="Transferencia electrónica" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer"> Depósito en tiendas de conveniencia (Oxxo, 7Eleven, etc.)
-			<input type="checkbox" id="p8" class="opciones" name="p8" value="Depósito en tiendas" ><br>
+			<input type="checkbox" id="p8" class="opciones" name="p8[ ]" value="Depósito en tiendas" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Otros
-			<input type="checkbox" id="p8" class="opciones" name="p8" value="Otros" ><br>
+			<input type="checkbox" id="p8" class="opciones" name="p8[ ]" value="Otros" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">No realizo compras en línea
-			<input type="checkbox" id="p8" class="opciones" name="p8" value="No realizo compras en línea" ><br>
+			<input type="checkbox" id="p8" class="opciones" name="p8[ ]" value="No realizo compras en línea" ><br>
 			<span class="checkmark"></span>	
 			</label>
 		</div>
@@ -509,63 +508,63 @@
 		</div>
 		<div class="opciones">
 			<label class="text-answer"> Ropa
-			<input type="checkbox" id="p9" class="opciones" name="p9" value="Ropa" ><br>
+			<input type="checkbox" id="p9" class="opciones" name="p9[ ]" value="Ropa" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Comida a domicilio (Rappi, UberEats, etc)
-			<input type="checkbox" id="p9" class="opciones" name="p9" value="Comida a domicilio" ><br>
+			<input type="checkbox" id="p9" class="opciones" name="p9[ ]" value="Comida a domicilio" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Super a domicilio (víveres)
-			<input type="checkbox" id="p9" class="opciones" name="p9" value="Super a domicilio" ><br>
+			<input type="checkbox" id="p9" class="opciones" name="p9[ ]" value="Super a domicilio" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer"> Muebles y/o electrodomésticos
-			<input type="checkbox" id="p9" class="opciones" name="p9" value="Muebles y/o electrodomésticos" ><br>
+			<input type="checkbox" id="p9" class="opciones" name="p9[ ]" value="Muebles y/o electrodomésticos" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer"> Coleccionables
-			<input type="checkbox" id="p9" class="opciones" name="p9" value="Coleccionables" ><br>
+			<input type="checkbox" id="p9" class="opciones" name="p9[ ]" value="Coleccionables" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Libros (físicos o electrónicos)
-			<input type="checkbox" id="p9" class="opciones" name="p9" value="Libros" ><br>
+			<input type="checkbox" id="p9" class="opciones" name="p9[ ]" value="Libros" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer">Computadoras y/o electrónicos
-			<input type="checkbox" id="p9" class="opciones" name="p9" value="Computadoras y/o electrónicos" ><br>
+			<input type="checkbox" id="p9" class="opciones" name="p9[ ]" value="Computadoras y/o electrónicos" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Herramientas y ferretería
-			<input type="checkbox" id="p9" class="opciones" name="p9" value="Herramientas y ferretería" ><br>
+			<input type="checkbox" id="p9" class="opciones" name="p9[ ]" value="Herramientas y ferretería" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer"> Entretenimiento (música, tv, videojuegos, juguetes, etc.)
-			<input type="checkbox" id="p9" class="opciones" name="p9" value="Entretenimiento" ><br>
+			<input type="checkbox" id="p9" class="opciones" name="p9[ ]" value="Entretenimiento" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Programas o aplicaciones
-			<input type="checkbox" id="p9" class="opciones" name="p9" value="Programas o aplicaciones" ><br>
+			<input type="checkbox" id="p9" class="opciones" name="p9[ ]" value="Programas o aplicaciones" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Reservaciones y boletos
-			<input type="checkbox" id="p9" class="opciones" name="p9" value="Reservaciones y boletos" ><br>
+			<input type="checkbox" id="p9" class="opciones" name="p9[ ]" value="Reservaciones y boletos" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer"> Artículos de higiene
-			<input type="checkbox" id="p9" class="opciones" name="p9" value="Artículos de higiene" ><br>
+			<input type="checkbox" id="p9" class="opciones" name="p9[ ]" value="Artículos de higiene" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer"> Artículos deportivos
-			<input type="checkbox" id="p9" class="opciones" name="p9" value="Artículos deportivos" ><br>
+			<input type="checkbox" id="p9" class="opciones" name="p9[ ]" value="Artículos deportivos" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Otros
-			<input type="checkbox" id="p9" class="opciones" name="p9" value="Otros" ><br>
+			<input type="checkbox" id="p9" class="opciones" name="p9[ ]" value="Otros" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer">Sigo sin realizar compras en línea
-			<input type="checkbox" id="p9" class="opciones" name="p9" value="Sigo sin realizar compras en línea" ><br>
+			<input type="checkbox" id="p9" class="opciones" name="p9[ ]" value="Sigo sin realizar compras en línea" ><br>
 			<span class="checkmark"></span>
 			</label>
 		</div>
@@ -648,45 +647,47 @@
 			<span class="checkmark"></span>
 			</label>
 		</div>
-		
+
+		<!-- Solo lee las primeras dos opciones y la segunda la pone mal -->
 		<div class="pregunta">
 			<b><?php echo "21.- " . $preguntas[20]?> </b> <br>
 		</div>
 		<div class="opciones">
+		<br>
 			<label class="text-answer">Diabetes
-			<input type="checkbox" id="p14" class="opciones" name="p14" value="Diabetes" ><br>
+			<input type="checkbox" id="p14" class="opciones" name="p14[ ]" value="Diabetes" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Hipertensión
-			<input type="checkbox" id="p14" class="opciones" name="p14" value="Hipertensión" ><br>
+			<input type="checkbox" id="p14" class="opciones" name="p14[ ]" value="Hipertensión" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Obesidad
-			<input type="checkbox" id="p14" class="opciones" name="p14" value="Obesidad" ><br>
+			<input type="checkbox" id="p14" class="opciones" name="p14[ ]" value="Obesidad" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer"> Asma
-			<input type="checkbox" id="p14" class="opciones" name="p14" value="Asma" ><br>
+			<input type="checkbox" id="p14" class="opciones" name="p14[ ]" value="Asma" ><br>
 			<span class="checkmark"></span>
 			</label>
-			<label class="text-answer"> Condiciones cardíacas
-			<input type="checkbox" id="p14" class="opciones" name="p14" value="Condiciones cardíacas" ><br>
+			<label class="text-answer">Condiciones cardiacas
+			<input type="checkbox" id="p14" class="opciones" name="p14[ ]" value="Condiciones cardiacas" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer"> Inmunodeficiencia
-			<input type="checkbox" id="p14" class="opciones" name="p14" value="Inmunodeficiencia" ><br>
+			<input type="checkbox" id="p14" class="opciones" name="p14[ ]" value="Inmunodeficiencia" ><br>
 			<span class="checkmark"></span>	
 			</label>
-			<label class="text-answer"> Hepatitis
-			<input type="checkbox" id="p14" class="opciones" name="p14" value="Hepatitis" ><br>
+			<label class="text-answer">Hepatitis
+			<input type="checkbox" id="p14" class="opciones" name="p14[ ]" value="Hepatitis" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Otros no listados
-			<input type="checkbox" id="p14" class="opciones" name="p14" value="Otros no listados" ><br>
-			<span class="checkmark"></span>
+			<input type="checkbox" id="p14" class="opciones" name="p14[ ]" value="Otros no listados" ><br>
+			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer">Ninguna
-			<input type="checkbox" id="p14" class="opciones" name="p14" value="Ninguna" ><br>
+			<input type="checkbox" id="p14" class="opciones" name="p14[ ]" value="Ninguna" ><br>
 			<span class="checkmark"></span>	
 			</label>
 		</div>
@@ -697,35 +698,35 @@
 		<div class="opciones">
 		<br>
 			<label class="text-answer">Ansiedad
-			<input type="checkbox" id="p15" class="opciones" name="p15" value="Ansiedad" ><br>
+			<input type="checkbox" id="p15" class="opciones" name="p15[ ]" value="Ansiedad" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Estrés
-			<input type="checkbox" id="p15" class="opciones" name="p15" value="Estrés" ><br>
+			<input type="checkbox" id="p15" class="opciones" name="p15[ ]" value="Estrés" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Depresión
-			<input type="checkbox" id="p15" class="opciones" name="p15" value="Depresión" ><br>
+			<input type="checkbox" id="p15" class="opciones" name="p15[ ]" value="Depresión" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer"> Déficit de atención
-			<input type="checkbox" id="p15" class="opciones" name="p15" value="Déficit de atención" ><br>
+			<input type="checkbox" id="p15" class="opciones" name="p15[ ]" value="Déficit de atención" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer"> Baja de rendimiento laboral/académico
-			<input type="checkbox" id="p15" class="opciones" name="p15" value="Baja de rendimiento laboral/académico" ><br>
+			<input type="checkbox" id="p15" class="opciones" name="p15[ ]" value="Baja de rendimiento laboral/académico" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer"> Baja autoestima
-			<input type="checkbox" id="p15" class="opciones" name="p15" value="Baja autoestima" ><br>
+			<input type="checkbox" id="p15" class="opciones" name="p15[ ]" value="Baja autoestima" ><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer">Otros no listados
-			<input type="checkbox" id="p15" class="opciones" name="p15" value="Otros no listados" ><br>
+			<input type="checkbox" id="p15" class="opciones" name="p15[ ]" value="Otros no listados" ><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Ninguna
-			<input type="checkbox" id="p15" class="opciones" name="p15" value="Ninguna" ><br>
+			<input type="checkbox" id="p15" class="opciones" name="p15[ ]" value="Ninguna" ><br>
 			<span class="checkmark"></span>	
 			</label>
 		</div>
@@ -751,7 +752,7 @@
 <br><br><br><br>
 	<div class="posenc">
 		
-			<input type="submit"  value="Finalizar">
+			<input type="submit"  value="Submit" name="Submit" >
 		</form>
 	</div>
 
