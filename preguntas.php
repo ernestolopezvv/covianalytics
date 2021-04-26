@@ -5,7 +5,7 @@ session_start();
 $dbhost = "localhost";
 $dbuser = "root";
 $dbpass = "";
-$dbname = "covianalytics3";
+$dbname = "covianalytics4";
 
 
 
