@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!--<!DOCTYPE html>-->
 <html lang="en">
 <head>
@@ -7,13 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 	<LINK HREF="logokfj.ico" REL="icon">
-    <title>Covianalytics</title>
+    <title>Coronanalyst</title>
 </head>
 
 <body>
     <nav>
         <div class="logo"> 
-            <h4>Covianalytics</h4>
+            <h4>Coronanalyst</h4>
         </div>            
         <ul class="nav-links">
             <li>
@@ -30,6 +34,14 @@
         </div>
     </nav>
 	
+	<div class="info-index">
+		<div class="text-index">
+		<h1>¿Para qué es esta encuesta?</h1>
+                    <p>Esta encuesta es realizada por alumnos del Tecnológico de Monterrey en colaboración con PK
+					Global. El propósito de esta encuesta es poder medir cambios de comportamiento que han 
+experimentado a través de la pandemia COVID-19. </p>
+		</div>	
+	</div>
 	
 	<div class="format-index">
 		<form action="login.php" method="POST">
@@ -49,10 +61,10 @@
     $dbhost = "localhost";
     $dbuser = "root";
     $dbpass = "";
-    $dbname = "covianalytics";
+    $dbname = "covianalytics4";
 
 	ini_set('display_errors','Off');
-	ini_set('error_reporting', E_ALL );
+	ini_set('error_reporting', E_ALL);
 	define('WP_DEBUG', false);
 	define('WP_DEBUG_DISPLAY', false);
 
@@ -76,15 +88,15 @@
 
             if($rnum == 0){
                 $stmt->close();
-
                 $stmt = $conn->prepare($INSERT);
                 $stmt->bind_param("s", $email);
                 $stmt->execute();
+                $idUsuario = mysqli_insert_id($conn);
+                $_SESSION['idUsuario'] = $idUsuario;
                 echo "New record inserted sucessfully";
-				header ("Location: encuesta.html");
+				header ("Location: encuesta.php");
             }else
                 echo "Someone is using this email already";
-				
 				/*echo"<script>alert('Someone is using this email already')</script>";*/
         }
         $stmt->close();
@@ -100,18 +112,8 @@
         <div class="container-footer-all">
 
             <div class="container-body">
-                <div class="column1">
-                    <br>
-                    <h1>¿Para qué es esta encuesta?</h1>
-                    <p>Esta encuesta es realizada por alumnos del Tecnológico de Monterrey en colaboración con PK
-Global. El propósito de esta encuesta es poder medir cambios de comportamiento que han 
-experimentado a través de la pandemia COVID-19. </p>
-                    <br>
-
-                </div>
-        
                 <div class="column2">
-                    <br>
+                <br>
                     <h1>Redes Sociales</h1>
 
                     <div class="row">
@@ -124,8 +126,7 @@ experimentado a través de la pandemia COVID-19. </p>
                         <img src="img/insta.png" href="https://www.instagram.com/tecdemonterrey/">
                         <label>Siguenos en Instagram</label>
                     </div>
-                    
-                    
+
                 </div>
 
                 <div class="column3">
