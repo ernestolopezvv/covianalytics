@@ -219,8 +219,6 @@ input[type=submit]:hover {
 	left: 17.5%;
 }
 }
-	5d4954
-
 
 /* Conoce más */
 
@@ -243,7 +241,11 @@ input[type=submit]:hover {
     overflow: hidden;
     text-align: center;
 }
-
+.posconoce{
+	position:relative;
+	padding-left:82%;
+	padding-top:5%;
+}
 .container-conoce .box .icon{
     position: relative;
     width: 80px;
@@ -361,11 +363,6 @@ input[type=submit]:hover {
 	position:relative;
 	padding-left:82%;
 }
-.pos{
-	padding-left:82%;
-	padding-bottom:80%;
-}
-
 .terminos{
 	left:185px;
     bottom: -35%;
@@ -722,6 +719,10 @@ footer{
 	left:24%;
 	bottom:-510.6%;
 }
+.posconoce{
+	padding-left:22%;
+	padding-bottom:5%;
+}
 }
 
 .opciones{
@@ -761,11 +762,7 @@ footer{
 	position:absolute;
 }
 
-.pos1{
-    left: 1087px;
-    bottom: 100px;
-	position:absolute;
-}
+
 
 a{
     text-decoration: none;
@@ -774,5 +771,3 @@ a{
 a:visited{
     text-decoration: none;
 }    
-
-
