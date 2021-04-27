@@ -96,6 +96,23 @@ experimentado a través de la pandemia COVID-19. </p>
                 echo "New record inserted sucessfully";
 				header ("Location: encuesta.php");
             }else
+
+                $idUsuario = mysqli_query($conn, "SELECT idUsuario FROM usuario WHERE email = '$email';");
+                $result = mysqli_fetch_array($idUsuario);
+                $_SESSION['idUsuario'] = $result['idUsuario'];
+                $SELECT = "SELECT Respuesta FROM respuestas WHERE Usuario_idUsuario = $_SESSION[idUsuario];";
+                $stmt = $conn->prepare($SELECT);
+                $stmt->execute();
+                $stmt->bind_result($email);
+                $stmt->store_result();
+                $rnum = $stmt->num_rows;
+
+                if($rnum > 0) {
+                    $stmt->close();
+                    header ("Location: dashboard.php");
+                } else{
+                    header ("Location: encuesta.php");
+                }
                 echo "Someone is using this email already";
 				/*echo"<script>alert('Someone is using this email already')</script>";*/
         }

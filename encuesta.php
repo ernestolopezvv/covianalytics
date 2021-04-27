@@ -336,8 +336,9 @@
 	
 <div class="encuesta-format">
 	<div class="white-space">
+	<div class="encuesta-format">
 	<form action="preguntas.php" method="POST" onsubmit="return validate()"><br>
-		
+
 		<div class="list-format">
 		<div class="pregunta-list">
 			<b><?php echo "1.- " . $preguntas[0]?> </b> <br>
@@ -475,7 +476,7 @@
 		</SELECT>
 		</div>
 		</div>
-		
+		<<<<<<< andy2
 			
 		<div class="pregunta">
 			<b><?php echo "8.- " . $preguntas[7]?> </b> <br>
@@ -585,7 +586,7 @@
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">No realizaba compras en línea
-			<input type="checkbox" id="p3.9" class="opcion" name="p3[ ]" value="No realizaba compras en línea"><br>
+			<input type="checkbox" id="p3.9" class="opcion" name="p3[ ]" value="No realizaba compras en línea"><br>	
 			<span class="checkmark"></span>	
 			</label>
 		</div>
@@ -744,7 +745,7 @@
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">No realizo compras en línea
-			<input type="checkbox" id="p7.8" class="opcion" name="p7[ ]" value="No realizo compras en línea" ><br>
+			<input type="checkbox" id="p7.8" class="opcion" name="p7[ ]" value="No realizo compras en línea" ><br>	
 			<span class="checkmark"></span>	
 			</label>
 		</div>
@@ -859,7 +860,7 @@
 			</label>
 			<label class="text-answer">Sigo sin realizar compras en línea
 			<input type="checkbox" id="p9.15" class="opcion" name="p9[ ]" value="Sigo sin realizar compras en línea" ><br>
-			<span class="checkmark"></span>
+   		<span class="checkmark"></span>
 			</label>
 		</div>
 		<div class="pregunta">
@@ -943,13 +944,15 @@
 			</label>
 		</div>
 
-		<!-- Solo lee las primeras dos opcion y la segunda la pone mal -->
+
+		<!-- Solo lee las primeras dos opciones y la segunda la pone mal -->
 		<div class="pregunta">
 			<b><?php echo "21.- " . $preguntas[20]?> </b> <br>
 		<div class="aviso">
 			<b>(Seleccione todos los que necesite)</b>
 		</div>
 		</div>
+
 		<div class="opcion">
 			<label class="text-answer">Diabetes
 			<input type="checkbox" id="p14.1" class="opcion" name="p14[ ]" value="Diabetes" ><br>

@@ -156,9 +156,9 @@ nav{
 	height:55%;
 	font-family:'candara';
 	text-align:center;
-	--text-top:-50%;
+	text-top:-50%;
 	border-right-style:outset;
-	--text-bottom:40%;
+	text-bottom:40%;
 }
 .text-index{
 	width:80%;
@@ -167,6 +167,10 @@ nav{
 	margin-top:25%;
 	border-radius:15px;
 	background-color:#C4B1BB;
+
+	text-top:-50%;
+	border-right-style:outset;
+	text-bottom:40%;
 }
 
 input[type=email] {
@@ -213,7 +217,7 @@ input[type=submit]:hover {
 	.text-index{
 		margin-top:8%;
 		margin-bottom:8%;
-        border-radius:10px;
+    border-radius:10px;
 		height:70%;
 	} 
 	.message{
