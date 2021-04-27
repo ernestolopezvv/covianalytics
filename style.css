@@ -214,6 +214,7 @@ input[type=submit]:hover {
 		margin-top:8%;
 		margin-bottom:8%;
         border-radius:10px;
+		height:70%;
 	} 
 	.message{
 	width: 65%;
@@ -673,6 +674,42 @@ footer{
 	z-index:100;
 }
 
+
+.opciones{
+	width: 80%;
+	position:relative;
+	left:10%;
+}
+.text-answer {
+  padding-left: 8.5%;
+  font-size: 16px;
+}
+.checkmark {
+  margin-left: 3%;
+  height: 14px;
+  width: 14px;
+}
+
+
+.message-format{
+	background-color:#AD99A4;
+	width:40%;
+	height:30%;
+	position:absolute;
+	left:30%;
+	bottom:40%;
+	font-family:'Candara';
+	border-radius:10px;
+}
+
+.posmess{
+	left:32%;
+	bottom:-40%;
+	position:absolute;
+}
+.termcond{
+    text-align: center;
+}
 /*Encuesta responsivo*/
 @media screen and (max-width: 768px) {
 	
@@ -725,45 +762,21 @@ footer{
 	padding-left:22%;
 	padding-bottom:5%;
 }
-}
-
-.opciones{
-	width: 80%;
-	position:relative;
-	left:10%;
-}
-.text-answer {
-  padding-left: 8.5%;
-  font-size: 16px;
-}
-.checkmark {
-  margin-left: 3%;
-  height: 14px;
-  width: 14px;
-}
-
 
 .message-format{
-	background-color:#AD99A4;
-	width:40%;
-	height:30%;
-	position:absolute;
-	left:30%;
-	bottom:40%;
-	font-family:'Candara';
-	border-radius:10px;
-}
-
-.termcond{
-    text-align: center;
+	width:80%;
+	padding-left:10%;
+	padding-right:10%;
+	height:50%;
+	left:10%;
+	bottom:30%;
 }
 
 .posmess{
-	left:32%;
-	bottom:-40%;
-	position:absolute;
+	left:15%;
+	padding-top:2%;
 }
-
+}
 
 
 a{

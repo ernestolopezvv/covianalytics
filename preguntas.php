@@ -5,7 +5,7 @@ session_start();
 $dbhost = "localhost";
 $dbuser = "root";
 $dbpass = "";
-$dbname = "covianalytics1";
+$dbname = "covianalytics4";
 
 
 $conn = new mysqli($dbhost,$dbuser,$dbpass,$dbname);
