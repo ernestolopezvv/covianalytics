@@ -367,9 +367,9 @@ input[type=submit]:hover {
 	padding-left:82%;
 }
 .terminos{
-	left:185px;
-    bottom: -35%;
+	left:32%;
 	position:absolute;
+	bottom:-22%;
 }
 
 
@@ -414,8 +414,8 @@ input[type=submit]:hover {
     }
 
     .terminos{
-    left: -22%;
-    bottom: -190% 
+    left: 15%;
+    bottom:-14%;
     }
 }
 
@@ -707,8 +707,19 @@ footer{
 	bottom:-40%;
 	position:absolute;
 }
+.terms-format{
+	background-color:#AD99A4;
+	width:40%;
+	height:40%;
+	position:absolute;
+	left:30%;
+	bottom:40%;
+	font-family:'Candara';
+	border-radius:10px;
+}
 .termcond{
     text-align: center;
+	margin:3%;
 }
 /*Encuesta responsivo*/
 @media screen and (max-width: 768px) {
@@ -752,6 +763,12 @@ footer{
 .encuesta-format{
 	height:607%;
 	
+}
+.terms-format{
+	width:80%;
+	height:70%;
+	left:10%;
+	bottom:15%;
 }
 .posenc{
 	position:absolute;
