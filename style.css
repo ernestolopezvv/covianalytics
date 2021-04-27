@@ -10,7 +10,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
+    min-height: 8%;
     background: #5d4954; 
     font-family: 'Poppins', sans-serif;
 }
@@ -70,8 +70,8 @@ nav{
     .nav-links{
         position: absolute;
         right: 0px;
-        height: 92vh;
-        top: 8vh;
+        height: 95%;
+        top: 6%;
         background: #5d4954; 
         display: flex;
         flex-direction: column;
@@ -79,7 +79,7 @@ nav{
         width: 40%;
         transform:translateX(100%);
         transition: transform 0.5s ease-in;
-		z-index:200;
+		z-index:100;
     }
     .nav-links li{
         opacity: 0;
@@ -122,7 +122,7 @@ nav{
 .img-logo{
 	width:8%;
 	position:relative;
-	bottom:-12%;
+	top:10%;
 	left:1%;
 	opacity:50%
 }
@@ -311,7 +311,7 @@ input[type=submit]:hover {
     margin: 0;
     padding: 0;   
 }
-
+/*Contactanos*/
 .contacts {
 	background-color: #AD99A4;
 	border-radius:6px;
@@ -357,10 +357,13 @@ input[type=submit]:hover {
 	bottom: 45%;
 }
 
-
+.poscontact{
+	position:relative;
+	padding-left:82%;
+}
 .pos{
-	left:82%;
-	position:absolute;
+	padding-left:82%;
+	padding-bottom:80%;
 }
 
 .terminos{
@@ -385,16 +388,22 @@ input[type=submit]:hover {
 	font-size:92%;
 	}
 
-	.pos{
-	left:22%;
-	bottom:5%;
-	}
+	.poscontact{
+	position:relative;
+	padding-left:22%;
+	top:-2%;
+}
 	
 	.img-contact {
 	bottom: 2%;
 	left:2%;
 	}
-
+	
+	.img-logo{
+	width:15%;
+	left:35%;
+	top:18%;
+	}
 	.line{
 	bottom: 30%;
 	}
@@ -402,11 +411,6 @@ input[type=submit]:hover {
     .pos1{
     left: -22%;
     bottom: -5%;
-    }
-
-    .pos{
-        left:22%;
-        bottom:5%;
     }
 
     .terminos{
@@ -649,7 +653,6 @@ footer{
 	font-size:20px;
 	padding-bottom:1%;
 	padding-top:.7%;
-	border-radius:5px;
 }
 
 .pregunta-list{
@@ -707,7 +710,6 @@ footer{
 }
 	.list-format{
 	width: 90%;
-	border-radius:5px;
 	left:5%;
 	font-size:16px;
 }
