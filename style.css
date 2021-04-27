@@ -10,7 +10,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
+    min-height: 8%;
     background: #5d4954; 
     font-family: 'Poppins', sans-serif;
 }
@@ -70,8 +70,8 @@ nav{
     .nav-links{
         position: absolute;
         right: 0px;
-        height: 92vh;
-        top: 8vh;
+        height: 95%;
+        top: 6%;
         background: #5d4954; 
         display: flex;
         flex-direction: column;
@@ -79,7 +79,7 @@ nav{
         width: 40%;
         transform:translateX(100%);
         transition: transform 0.5s ease-in;
-		z-index:200;
+		z-index:100;
     }
     .nav-links li{
         opacity: 0;
@@ -122,7 +122,7 @@ nav{
 .img-logo{
 	width:8%;
 	position:relative;
-	bottom:-12%;
+	top:10%;
 	left:1%;
 	opacity:50%
 }
@@ -162,9 +162,15 @@ nav{
 }
 .text-index{
 	width:80%;
+	height:40%;
 	margin-left:10%;
 	margin-top:25%;
-	background-color:rgb(228, 228, 228);
+	border-radius:15px;
+	background-color:#C4B1BB;
+
+	text-top:-50%;
+	border-right-style:outset;
+	text-bottom:40%;
 }
 
 input[type=email] {
@@ -211,16 +217,15 @@ input[type=submit]:hover {
 	.text-index{
 		margin-top:8%;
 		margin-bottom:8%;
-        border-radius:10px;
-	}
+    border-radius:10px;
+		height:70%;
+	} 
 	.message{
 	width: 65%;
 	bottom:13%;
 	left: 17.5%;
 }
 }
-	
-
 
 /* Conoce más */
 
@@ -243,7 +248,11 @@ input[type=submit]:hover {
     overflow: hidden;
     text-align: center;
 }
-
+.posconoce{
+	position:relative;
+	padding-left:82%;
+	padding-top:5%;
+}
 .container-conoce .box .icon{
     position: relative;
     width: 80px;
@@ -311,7 +320,7 @@ input[type=submit]:hover {
     margin: 0;
     padding: 0;   
 }
-
+/*Contactanos*/
 .contacts {
 	background-color: #AD99A4;
 	border-radius:6px;
@@ -357,16 +366,14 @@ input[type=submit]:hover {
 	bottom: 45%;
 }
 
-
-.pos{
-	left:82%;
-	position:absolute;
+.poscontact{
+	position:relative;
+	padding-left:82%;
 }
-
 .terminos{
-	left:185px;
-    bottom: -35%;
+	left:32%;
 	position:absolute;
+	bottom:-22%;
 }
 
 
@@ -385,16 +392,22 @@ input[type=submit]:hover {
 	font-size:92%;
 	}
 
-	.pos{
-	left:22%;
-	bottom:5%;
-	}
+	.poscontact{
+	position:relative;
+	padding-left:22%;
+	top:-2%;
+}
 	
 	.img-contact {
 	bottom: 2%;
 	left:2%;
 	}
-
+	
+	.img-logo{
+	width:15%;
+	left:35%;
+	top:18%;
+	}
 	.line{
 	bottom: 30%;
 	}
@@ -404,14 +417,9 @@ input[type=submit]:hover {
     bottom: -5%;
     }
 
-    .pos{
-        left:22%;
-        bottom:5%;
-    }
-
     .terminos{
-    left: -22%;
-    bottom: -190% 
+    left: 15%;
+    bottom:-14%;
     }
 }
 
@@ -542,13 +550,12 @@ footer{
     }
 }
 
-
+/*Encuesta*/
 .encuesta-format{
-	font-family:'Candara';
+	font-family:Candara;
 	margin-top:1%;
 	margin-bottom:1.5%;
 }
-
 .pregunta{
 	background-color:#C4B1BB;
 	width:60%;
@@ -560,6 +567,7 @@ footer{
 	padding-top:.2%;
 	font-size:20px;
 	z-index:100;
+	
 }
 .opciones{
 	background-color:#C4B1BB;
@@ -620,30 +628,69 @@ footer{
 	background: white;
 }
 .posenc{
-	left:25%;
-	bottom: 100px;
+	left:43%;
+	bottom:-472%;
 	position:absolute;
 }
-
-.list-format{
-	background-color:#C4B1BB;
-	width: 40%;
-	margin-bottom:1%;
-	position:relative;
-	left:30%;
-	text-align:center;
-}
-
 @media screen and (max-width: 768px) {
 	
-	.pregunta{
+.pregunta{
 	width:80%;
 	left:10%;
 	height:6%;
 	font-size:16px;
 }
-
+.opciones{
+	width: 80%;
+	position:relative;
+	left:10%;
 }
+.text-answer {
+  padding-left: 8.5%;
+  font-size: 16px;
+}
+.checkmark {
+  margin-left: 3%;
+  height: 14px;
+  width: 14px;
+}
+.posenc{
+	left:22%;
+	bottom:-486%;
+}
+}
+
+.list-format{
+	background-color:#C4B1BB;
+	width: 85%;
+	margin-bottom:1%;
+	position:relative;
+	left:7.5%;
+	text-align:left;
+	font-size:20px;
+	padding-bottom:1%;
+	padding-top:.7%;
+}
+
+.pregunta-list{
+	width:35%;
+	left:10%;
+	position:relative;
+	margin-top:.7%;
+	padding-top:.2%;
+	padding-bottom:1%;
+	z-index:100;
+}
+.pregunta2-list{
+	width:35%;
+	left:55%;
+	position:relative;
+	margin-top:-6.6%;
+	padding-top:.2%;
+	padding-bottom:1%;
+	z-index:100;
+}
+
 
 .opciones{
 	width: 80%;
@@ -660,10 +707,6 @@ footer{
   width: 14px;
 }
 
-.posenc{
-	left:44%;
-	bottom:-420%;
-}
 
 .message-format{
 	background-color:#AD99A4;
@@ -676,21 +719,99 @@ footer{
 	border-radius:10px;
 }
 
-.termcond{
-    text-align: center;
-}
-
 .posmess{
 	left:32%;
 	bottom:-40%;
 	position:absolute;
 }
-
-.pos1{
-    left: 1087px;
-    bottom: 100px;
+.terms-format{
+	background-color:#AD99A4;
+	width:40%;
+	height:40%;
 	position:absolute;
+	left:30%;
+	bottom:40%;
+	font-family:'Candara';
+	border-radius:10px;
 }
+.termcond{
+    text-align: center;
+	margin:3%;
+}
+/*Encuesta responsivo*/
+@media screen and (max-width: 768px) {
+	
+	.pregunta{
+	width:90%;
+	left:5%;
+	font-size:16px;
+	padding-left:4%;
+	
+}
+.opcion{
+	background-color:#C4B1BB;
+	width: 90%;
+	left:5%;
+}
+.aviso{
+	left:0%;
+}
+	.pregunta-list{
+	left:5%;
+	width:90%;
+}
+	.pregunta2-list{
+	left:5%;
+	width:80%;
+	margin-top:1;
+}
+	.white-space{
+	width:85%;
+	border-radius:5px;
+	margin-left:7.5%;
+	height:593%;
+	
+}
+	.list-format{
+	width: 90%;
+	left:5%;
+	font-size:16px;
+}
+.encuesta-format{
+	height:607%;
+	
+}
+.terms-format{
+	width:80%;
+	height:70%;
+	left:10%;
+	bottom:15%;
+}
+.posenc{
+	position:absolute;
+	left:24%;
+	bottom:-510.6%;
+}
+.posconoce{
+	padding-left:22%;
+	padding-bottom:5%;
+}
+
+.message-format{
+	width:80%;
+	padding-left:10%;
+	padding-right:10%;
+	height:50%;
+	left:10%;
+	bottom:30%;
+}
+
+.posmess{
+	left:15%;
+	padding-top:2%;
+}
+}
+
 
 a{
     text-decoration: none;
@@ -699,5 +820,3 @@ a{
 a:visited{
     text-decoration: none;
 }    
-
-

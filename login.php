@@ -40,7 +40,7 @@
                     <p>Esta encuesta es realizada por alumnos del Tecnológico de Monterrey en colaboración con PK
 					Global. El propósito de esta encuesta es poder medir cambios de comportamiento que han 
 experimentado a través de la pandemia COVID-19. </p>
-		</div>
+		</div>	
 	</div>
 	
 	<div class="format-index">
