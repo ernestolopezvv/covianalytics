@@ -35,8 +35,8 @@
     </nav>
 	
 	<div class="info-index">
-		<div class="text-index">
-		<h1>¿Para qué es esta encuesta?</h1>
+		<div class="text-index"><br>
+		<h1>¿Para qué es esta encuesta?</h1><br>
                     <p>Esta encuesta es realizada por alumnos del Tecnológico de Monterrey en colaboración con PK
 					Global. El propósito de esta encuesta es poder medir cambios de comportamiento que han 
 experimentado a través de la pandemia COVID-19. </p>

@@ -73,7 +73,7 @@ $res2 = $conn->query($graph2);
                            'width':400,
                            'height':300};
             // Set chart options
-            var options2 = {'title':'How Much Pizza You Ate Last Night',
+            var options2 = {'title':'Dónde compras más',
                            'width':400,
                            'height':300};
             // Set chart options
