@@ -3,12 +3,12 @@
 // Crear conexión
 $conn = new mysqli("localhost", "root", "", "covianalytics4");
 
-// Grafica Genero y respuesta 9
-$graph1 = "SELECT genero, count(*) as number FROM datos_usuario GROUP BY genero";
+// Grafica Comparacion pregunta 8 y 13
+$query = "SELECT genero, count(*) as number FROM datos_usuario GROUP BY genero";
 $graph2 = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Preguntas_idPreguntas = 9 GROUP BY Respuesta";
-$res = $conn->query($graph1);
+$res = $conn->query($query);
 $res2 = $conn->query($graph2);
-$graph3 = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Preguntas_idPreguntas = 15 GROUP BY Respuesta";
+$graph3 = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Preguntas_idPreguntas = 9 GROUP BY Respuesta";
 $res3 = $conn->query($graph3);
 
 // Grafica Comparacion pregunta 8 y 13
@@ -26,7 +26,6 @@ $op4d = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta = 
 
 $op5a = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta = 'No realizaba compras en línea' AND Preguntas_idPreguntas = 8 GROUP BY Respuesta";
 $op5d = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta = 'No realizaba compras en línea' AND Preguntas_idPreguntas = 13 GROUP BY Respuesta";
-
 
 // Grafica Comparacion pregunta 11 y 16
 $op6a = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta = 'Ropa' AND Preguntas_idPreguntas = 11 GROUP BY Respuesta";
@@ -92,13 +91,13 @@ function insertQuery($conn,$query){
     return isNull($antes);
 }
 
-
 ?>
 
 
 
 <html lang="en">
 <head>
+    <!--
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -106,8 +105,15 @@ function insertQuery($conn,$query){
     <link rel="stylesheet" href="style.css">
 	<LINK HREF="logokfj.ico" REL="icon">
     <title>Coronanalyst</title>
-
-    <head>
+    -->
+    <head> 
+    <button onclick="screenshot()">Click aquí para descargar gráficas</button>
+    <form action="graphdw2.php" class="inline">
+        <button>Ir a siguientes gráficas</button>
+    </form>
+    <form action="dashboard.php" class="inline">
+        <button>Volver</button>
+    </form>
         <!--Load the Google API-->
         <script type="text/javascript" src="https://www.google.com/jsapi"></script>
         <script type="text/javascript">
@@ -143,7 +149,8 @@ function insertQuery($conn,$query){
             ?>
 
              ]);
-        
+            
+             //Create the 3 data table.
             var data3 = google.visualization.arrayToDataTable([
                 ["Respuesta", "number"],
              <?php
@@ -159,31 +166,46 @@ function insertQuery($conn,$query){
                            'width':400,
                            'height':300};
             // Set chart options
-            var options2 = {'title':'¿Qué plataforma utiliza para comprar en línea?',
+            var options2 = {'title':'How Much Pizza You Ate Last Night',
                            'width':400,
                            'height':300};
             // Set chart options
-            var options3 = {'title':'¿Qué método de pago utiliza usted para sus compras en internet?',
+            var options3 = {'title':'Line chart',
                            'width':400,
                            'height':300};
 
             // Instantiate and draw our chart, passing in some options.
             var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+            google.visualization.events.addListener(chart, 'ready', function () {
+                chart_div.innerHTML = '<img src="' + chart.getImageURI() + '">';
+                console.log(chart_div.innerHTML);
+            });
             chart.draw(data, options);
+
             var chart2 = new google.visualization.PieChart(document.getElementById('chart_div2'));
+            google.visualization.events.addListener(chart2, 'ready', function () {
+                chart_div2.innerHTML = '<img src="' + chart2.getImageURI() + '">';
+                console.log(chart_div2.innerHTML);
+            });
             chart2.draw(data2, options2);
+
             var chart3 = new google.visualization.PieChart(document.getElementById('chart_div3'));
+            google.visualization.events.addListener(chart3, 'ready', function () {
+                chart_div3.innerHTML = '<img src="' + chart3.getImageURI() + '">';
+                console.log(chart_div3.innerHTML);
+            });
             chart3.draw(data3, options3);
             
+
             }
-            
+
             google.charts.load('current', {packages: ['corechart', 'bar']});
             google.charts.setOnLoadCallback(drawBasicA);
             google.charts.setOnLoadCallback(drawBasicB);
 
             function drawBasicA() {
 
-                var data5 = google.visualization.arrayToDataTable([
+                var data4 = google.visualization.arrayToDataTable([
                     ['Compras en Linea', 'Antes', 'Despues'],
                     <?php
                         echo "['1 a 5 veces al mes'," .insertQuery($conn,$op1a).",".insertQuery($conn,$op1d)."],";
@@ -194,7 +216,7 @@ function insertQuery($conn,$query){
                     ?>
                 ]);
 
-                var options5 = {
+                var options4 = {
                     title: '¿Que tan seguido compra en linea?',
                     chartArea: {width: '50%'},
                     hAxis: {
@@ -206,13 +228,18 @@ function insertQuery($conn,$query){
                     }
                 };
 
-                    var chart5 = new google.visualization.BarChart(document.getElementById('chart_div4'));
-
-                    chart5.draw(data5, options5);
+                    var chart4 = new google.visualization.BarChart(document.getElementById('chart_div4'));
+                    google.visualization.events.addListener(chart4, 'ready', function () {
+                    chart_div4.innerHTML = '<img src="' + chart4.getImageURI() + '">';
+                    console.log(chart_div4.innerHTML);
+                    });
+                    chart4.draw(data4, options4);
                 }
-            function drawBasicB() {
+                
+                // Create 5 table
+                function drawBasicB() {
 
-                var data6 = new google.visualization.arrayToDataTable([
+                var data5 = new google.visualization.arrayToDataTable([
                     ['Categoria', 'Antes', 'Despues'],
                     <?php
                         echo "['Ropa'," .insertQuery($conn,$op6a).",".insertQuery($conn,$op6d)."],";
@@ -233,7 +260,7 @@ function insertQuery($conn,$query){
                     ?>
                 ]);
             
-                var options6 = {
+                var options5 = {
                     title: '¿De cuáles de las siguientes categorías realizaba compras?',
                     chartArea: {'width': '50%',
                                 'height':'auto'
@@ -251,32 +278,46 @@ function insertQuery($conn,$query){
                     }
                 };
 
-                    var chart6 = new google.visualization.BarChart(document.getElementById('chart_divB'));
-
-                    chart6.draw(data6, options6);
+                    var chart5 = new google.visualization.BarChart(document.getElementById('chart_div5'));
+                    google.visualization.events.addListener(chart5, 'ready', function () {
+                    chart_div5.innerHTML = '<img src="' + chart5.getImageURI() + '">';
+                    console.log(chart_div5.innerHTML);
+                    });
+                    chart5.draw(data5, options5);
             }
+
 
         </script>
 </head>
 
 <body>
+    <!--
     <nav>
         <div class="logo"> 
             <h4>Coronanalyst</h4>
         </div>            
     </nav>
+    -->
     <div class="graficas">
-        <ul>
-            <li><div align="center" id="chart_div"></div></li>
-            <li><div align="center" id="chart_div2"></div></li>
-            <li><div align="center" id="chart_div3"></div></li>
-            <li><div align="center" id="chart_div4"></div></li>
-            <li><div align="center" id="chart_divB"></div></li>
+        <div align="left" id="chart_div"></div>
+        <div align="left" id="chart_div2"></div>
+        <div align="left" id="chart_div3"></div>
+
         </ul>
     </div>
-    <form action="graphdw1.php" class="inline">
-        <button>Descargar PDF con gráficas</button>
-    </form>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+<script>
+        function screenshot(){
+            html2canvas(document.body).then(function(canvas){
+                document.body.appendChild(canvas)
+                var imgdata = canvas.toDataURL('image/png');
+                var doc = new jsPDF();
+                doc.addImage(imgdata, "PNG", 10, 10);
+                doc.save("sample.pdf");
+            })
+        }
+ </script>
 
 </html>

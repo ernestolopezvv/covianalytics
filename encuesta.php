@@ -482,23 +482,23 @@
 		</div>
 		<div class="opcion">
 			<label class="text-answer">1 a 5 veces al mes.
-			<input type="radio" id="p1" class="opcion" name="p1" value="1 a 5 veces al mes." required><br>
+			<input type="radio" id="p1" class="opcion" name="p1" value="1 a 5 veces al mes" required><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">6 a 10 veces al mes.
-			<input type="radio" id="p1" class="opcion" name="p1" value="6 a 10 veces al mes." required><br>
+			<input type="radio" id="p1" class="opcion" name="p1" value="6 a 10 veces al mes" required><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">Más de 10 veces por mes.
-			<input type="radio" id="p1" class="opcion" name="p1" value="Más de 10 veces por mes." required><br>
+			<input type="radio" id="p1" class="opcion" name="p1" value="Más de 10 veces por mes" required><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer">1 vez cada varios meses.
-			<input type="radio" id="p1" class="opcion" name="p1" value="1 vez cada varios meses." required><br>
+			<input type="radio" id="p1" class="opcion" name="p1" value="1 vez cada varios meses" required><br>
 			<span class="checkmark"></span>
 			</label>
 			<label class="text-answer">No realizaba compras en línea.
-			<input type="radio" id="p1" class="opcion" name="p1" value="No realizaba compras en línea." required><br>
+			<input type="radio" id="p1" class="opcion" name="p1" value="No realizaba compras en línea" required><br>
 			<span class="checkmark"></span>	
 			</label>
 		</div>
@@ -682,31 +682,35 @@
 			<span class="checkmark"></span>
 			</label>
 		</div>
+		
 		<div class="pregunta">
 			<b><?php echo "13.- " . $preguntas[12]?></b> <br>
 		</div>
 		<div class="opcion">
+			<label class="text-answer">1 a 5 veces al mes.
+			<input type="radio" id="p6" class="opcion" name="p6" value="1 a 5 veces al mes" required><br>
+			<span class="checkmark"></span>
+			</label>
+			<label class="text-answer">6 a 10 veces al mes.
+			<input type="radio" id="p6" class="opcion" name="p6" value="6 a 10 veces al mes" required><br>
+			<span class="checkmark"></span>
+			</label>
 			<label class="text-answer">Más de 10 veces por mes.
 			<input type="radio" id="p6" class="opcion" name="p6" value="Más de 10 veces por mes" required><br>
-			<span class="checkmark"></span>
-			</label>
-			<label class="text-answer">10 a 6 veces al mes.
-			<input type="radio" id="p6" class="opcion" name="p6" value="10 a 6 veces al mes" required><br>
-			<span class="checkmark"></span>
-			</label>
-			<label class="text-answer">5 a 1 vez por mes.
-			<input type="radio" id="p6" class="opcion" name="p6" value="5 a 1 veces al mes" required><br>
 			<span class="checkmark"></span>	
 			</label>
 			<label class="text-answer">1 vez cada varios meses.
 			<input type="radio" id="p6" class="opcion" name="p6" value="1 vez cada varios meses" required><br>
 			<span class="checkmark"></span>
 			</label>
-			<label class="text-answer">No realizo compras en línea.
-			<input type="radio" id="p6" class="opcion" name="p6" value="No realizo compras en línea" required><br>
+			<label class="text-answer">No realizaba compras en línea.
+			<input type="radio" id="p6" class="opcion" name="p6" value="No realizaba compras en línea" required><br>
 			<span class="checkmark"></span>	
 			</label>
 		</div>
+
+
+
 		
 		<div class="pregunta">
 			<b><?php echo "14.- " . $preguntas[13]?> </b><br>
