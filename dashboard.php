@@ -74,6 +74,20 @@ $op19d = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta =
 $op20a = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta = 'No realizo compras en línea' AND Preguntas_idPreguntas = 11 GROUP BY Respuesta";
 $op20d = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta = 'No realizo compras en línea' AND Preguntas_idPreguntas = 16 GROUP BY Respuesta";
 
+// Grafica pregunta 18
+
+$op21 = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta = 'Menos de 1,000'";
+
+$op22 = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta = '1,000 - 2,500'";
+
+$op23 = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta = '2,500 - 5,000'";
+
+$op24 = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta = '5,000 - 7,500'";
+
+$op25 = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta = '7,500 - 10,000'";
+
+$op26 = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta = 'Más de 10,000'";
+
 
 function isNull($array){
     if($array["number"] === NULL){
@@ -180,6 +194,8 @@ function insertQuery($conn,$query){
             google.charts.load('current', {packages: ['corechart', 'bar']});
             google.charts.setOnLoadCallback(drawBasicA);
             google.charts.setOnLoadCallback(drawBasicB);
+            google.charts.setOnLoadCallback(drawBasicC);
+
 
             function drawBasicA() {
 
@@ -256,6 +272,36 @@ function insertQuery($conn,$query){
                     chart6.draw(data6, options6);
             }
 
+            function drawBasicC() {
+
+                var data7 = google.visualization.arrayToDataTable([
+                    ['Gasto Compras en Linea', 'Total encuestados'],
+                    <?php
+                        echo "['Menos de 1,000'," .insertQuery($conn,$op21)."],";
+                        echo "['1,000 - 2,500'," .insertQuery($conn,$op22)."],";
+                        echo "['2,500 - 5,000'," .insertQuery($conn,$op23)."],";
+                        echo "['5,000 - 7,500'," .insertQuery($conn,$op24)."],";
+                        echo "['7,500 - 10,000'," .insertQuery($conn,$op25)."],";
+                        echo "['Más de 10,000'," .insertQuery($conn,$op26)."]";
+                    ?>
+                ]);
+
+                var options7 = {
+                    title: '¿En promedio cuánto dinero estima que gasta en compras en línea al mes?',
+                    chartArea: {width: '50%'},
+                    hAxis: {
+                        title: 'Total de Encuestados',
+                        minValue: 0
+                    },
+                    vAxis: {
+                        title: 'Dinero'
+                    }
+                };
+
+                    var chart7 = new google.visualization.BarChart(document.getElementById('chart_divC'));
+
+                    chart7.draw(data7, options7);
+            }
         </script>
 </head>
 
@@ -265,17 +311,17 @@ function insertQuery($conn,$query){
             <h4>Coronanalyst</h4>
         </div>            
     </nav>
-    <div class="graficas">
-        <ul>
-            <li><div align="center" id="chart_div"></div></li>
-            <li><div align="center" id="chart_div2"></div></li>
-            <li><div align="center" id="chart_div3"></div></li>
-            <li><div align="center" id="chart_div4"></div></li>
-            <li><div align="center" id="chart_divB"></div></li>
-        </ul>
+    <div class="graficas" align="center">
+        <div class="piechart" id="chart_div"></div></li>
+        <div class="piechart" id="chart_div2"></div></li>
+        <div class="piechart" id="chart_div3"></div></li>
     </div>
+        <div align="center" id="chart_div4"></div></li>
+        <div align="center" id="chart_divB"></div></li>
+        <div align="center" id="chart_divC"></div></li>
+
     <form action="graphdw1.php" class="inline">
-        <button>Descargar PDF con gráficas</button>
+        <input type="submit"  value="Descargar gráficas" name="Submit">
     </form>
 </body>
 

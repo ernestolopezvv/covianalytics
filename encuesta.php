@@ -1056,7 +1056,7 @@
 <br><br><br><br>
 	<div class="posenc">
 		
-			<input type="submit"  value="Submit" name="Submit" >
+			<input type="submit"  value="Enviar encuesta" name="Submit" >
 		</form>
 	</div>
 </div>

@@ -553,7 +553,7 @@ footer{
 	background-attachment: fixed;
 	z-index:100;
 	background-color:#fee;
-	height:515%;
+	height:470%;
 	
 }
 .white-space{
@@ -561,7 +561,7 @@ footer{
 	width:70%;
 	margin-left:15%;
 	margin-top:1%;
-	height:508%;
+	height:458%;
 	position:absolute;
 	border-radius:10px;
 	
@@ -641,7 +641,7 @@ footer{
 .posenc{
 	position:absolute;
 	left:44%;
-	bottom:-416.5%;
+	bottom:-358.5%;
 }
 
 .list-format{
@@ -752,7 +752,7 @@ footer{
 	width:85%;
 	border-radius:5px;
 	margin-left:7.5%;
-	height:593%;
+	height:443%;
 	
 }
 	.list-format{
@@ -761,7 +761,7 @@ footer{
 	font-size:16px;
 }
 .encuesta-format{
-	height:607%;
+	height:457%;
 	
 }
 .terms-format{
@@ -773,7 +773,7 @@ footer{
 .posenc{
 	position:absolute;
 	left:24%;
-	bottom:-510.6%;
+	bottom:-347.6%;
 }
 .posconoce{
 	padding-left:22%;
@@ -793,6 +793,12 @@ footer{
 	left:15%;
 	padding-top:2%;
 }
+
+.chart_div{
+	width:25%;
+	height: 500%;
+}
+
 }
 
 
@@ -803,3 +809,40 @@ a{
 a:visited{
     text-decoration: none;
 }    
+
+
+/*
+.graficas {
+    display: table;
+    width: 100%; 
+    table-layout: fixed; 
+    border-spacing: 10px; 
+	display: table-cell;
+}
+.piechart {
+    display: table-cell; 
+}
+*/
+
+/* Create three equal columns that floats next to each other */
+.piechart {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.graficas:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .piechart {
+    width: 100%;
+  }
+}
+

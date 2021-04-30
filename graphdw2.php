@@ -22,6 +22,7 @@ $op4d = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta = 
 $op5a = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta = 'No realizaba compras en línea' AND Preguntas_idPreguntas = 8 GROUP BY Respuesta";
 $op5d = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta = 'No realizaba compras en línea' AND Preguntas_idPreguntas = 13 GROUP BY Respuesta";
 
+
 // Grafica Comparacion pregunta 11 y 16
 $op6a = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta = 'Ropa' AND Preguntas_idPreguntas = 11 GROUP BY Respuesta";
 $op6d = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta = 'Ropa' AND Preguntas_idPreguntas = 16 GROUP BY Respuesta";
@@ -69,6 +70,21 @@ $op20a = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta =
 $op20d = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta = 'No realizo compras en línea' AND Preguntas_idPreguntas = 16 GROUP BY Respuesta";
 
 
+// Grafica pregunta 18
+
+$op21 = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta = 'Menos de 1,000'";
+
+$op22 = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta = '1,000 - 2,500'";
+
+$op23 = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta = '2,500 - 5,000'";
+
+$op24 = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta = '5,000 - 7,500'";
+
+$op25 = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta = '7,500 - 10,000'";
+
+$op26 = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Respuesta = 'Más de 10,000'";
+
+
 function isNull($array){
     if($array["number"] === NULL){
         return $array["number"] = 0;
@@ -102,6 +118,8 @@ function insertQuery($conn,$query){
     google.charts.load('current', {packages: ['corechart', 'bar']});
     google.charts.setOnLoadCallback(drawBasicA);
     google.charts.setOnLoadCallback(drawBasicB);
+    google.charts.setOnLoadCallback(drawBasicC);
+
 
     function drawBasicA() {
 
@@ -118,9 +136,10 @@ function insertQuery($conn,$query){
 
             var options4 = {
                 title: '¿Que tan seguido compra en linea?',
-                chartArea: {'width': '30%',
-                'height':'30%'
-                },
+                'height':200,
+                'width':600,
+                chartArea: {left: 0},
+                
                 hAxis: {
                 title: 'Total de Encuestados',
                 minValue: 0
@@ -162,9 +181,9 @@ function insertQuery($conn,$query){
             
         var options5 = {
             title: '¿De cuáles de las siguientes categorías realizaba compras?',
-            chartArea: {'width': '30%',
-            'height':'30%'
-             },
+            'height':200,
+            'width':600,
+            chartArea: {left: 0},
             hAxis: {
             title: 'Total de Encuestados',
             minValue: 0
@@ -187,6 +206,42 @@ function insertQuery($conn,$query){
     }
 
 
+    function drawBasicC() {
+
+        var data7 = google.visualization.arrayToDataTable([
+            ['Gasto Compras en Linea', 'Total encuestados'],
+        <?php
+            echo "['Menos de 1,000'," .insertQuery($conn,$op21)."],";
+            echo "['1,000 - 2,500'," .insertQuery($conn,$op22)."],";
+            echo "['2,500 - 5,000'," .insertQuery($conn,$op23)."],";
+            echo "['5,000 - 7,500'," .insertQuery($conn,$op24)."],";
+            echo "['7,500 - 10,000'," .insertQuery($conn,$op25)."],";
+            echo "['Más de 10,000'," .insertQuery($conn,$op26)."]";
+        ?>
+        ]);
+
+        var options7 = {
+        title: '¿En promedio cuánto dinero estima que gasta en compras en línea al mes?',
+        'height':200,
+        'width':600,
+        chartArea: {left: 0},
+        hAxis: {
+            title: 'Total de Encuestados',
+            minValue: 0
+        },
+        vAxis: {
+            title: 'Dinero'
+        }
+        };
+
+        var chart7 = new google.visualization.BarChart(document.getElementById('chart_divC'));
+        google.visualization.events.addListener(chart7, 'ready', function () {
+        chart_divC.innerHTML = '<img src="' + chart7.getImageURI() + '">';
+        console.log(chart_divC.innerHTML);
+        });
+
+        chart7.draw(data7, options7);
+        }
                 
     </script>
 </head>
@@ -194,6 +249,8 @@ function insertQuery($conn,$query){
 
     <div align="left" id="chart_div4"></div>
     <div align="left" id="chart_div5"></div>
+    <div align="left" id="chart_divC"></div>
+
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script> 

@@ -8,7 +8,7 @@ $query = "SELECT genero, count(*) as number FROM datos_usuario GROUP BY genero";
 $graph2 = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Preguntas_idPreguntas = 9 GROUP BY Respuesta";
 $res = $conn->query($query);
 $res2 = $conn->query($graph2);
-$graph3 = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Preguntas_idPreguntas = 9 GROUP BY Respuesta";
+$graph3 = "SELECT Respuesta, count(*) as number FROM respuestas WHERE Preguntas_idPreguntas = 15 GROUP BY Respuesta";
 $res3 = $conn->query($graph3);
 
 // Grafica Comparacion pregunta 8 y 13
@@ -166,11 +166,11 @@ function insertQuery($conn,$query){
                            'width':400,
                            'height':300};
             // Set chart options
-            var options2 = {'title':'How Much Pizza You Ate Last Night',
+            var options2 = {'title':'¿Qué plataforma utiliza para comprar en línea?',
                            'width':400,
                            'height':300};
             // Set chart options
-            var options3 = {'title':'Line chart',
+            var options3 = {'title':'¿Qué método de pago utiliza usted para sus compras en internet?',
                            'width':400,
                            'height':300};
 
